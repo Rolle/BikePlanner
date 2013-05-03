@@ -1,0 +1,36 @@
+<table class="table table-bordered table-striped" id="diary_table">
+    <!--table class="tablesorter" id="highscore_table"-->
+    <thead>
+      <tr>
+        <th>Fahrer</th>
+        <th>Gesamtkilometer</th>
+        <th>Gesamthöhenmeter</th>
+        <th>Gesamt Fahrzeit</th>
+        <th>Touren</th>
+        <th>Gefahrene Touren</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        <% @group.users.each do |user| %>
+          <tr>
+            <td><%= user.name %></td>  
+            <td><%= user.sum_distance%></td>
+            <td><%= user.sum_alt %></td>
+            <td><%= user.sum_duration%></td>
+            <td><%= user.tours.size().to_s %></td>
+            <td><%= user.tour_attendees.size().to_s %></td>
+          </tr>
+        <% end %>
+    </tbody>
+</table>
+
+
+<script type="text/javascript" src="/assets/jquery.tablesorter.min.js"></script> 
+<script>
+$(document).ready(function() 
+    { 
+        $("#diary_table").tablesorter({sortList: [[0,0],[1,0]]}); 
+    } 
+); 
+</script>

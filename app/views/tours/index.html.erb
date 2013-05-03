@@ -1,0 +1,53 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+        <th>Wann</th>
+        <th>Wo</th>
+        <th>Dauer</th>
+        <th>Womit</th>
+        <th>Wer</th>
+        <th>Wohin</th>    
+        <th>Mehr unter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tours.each do |tour| %>
+      <tr>
+        <td><%= tour.start_at.strftime("%d.%m.%Y %k:%M") if !tour.start_at.nil? %></td>
+        <td><%= tour.meeting_point %></td>
+        <td><%= tour.duration %></td>
+        <td><%= tour.tour_type %></td>    
+        <td><%= tour.user.name if tour.user %></td>
+        <td><%= tour.route %></td>
+        <td>
+            <% if !tour.link.nil? && tour.link != "" %>
+                <%= link_to 'Details', tour.link, :target => '_blank' %>
+            <% end %>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="7">
+            <% if signed_in? %>
+                <% if current_user.id == tour.user_id %>
+                    <% if tour.start_at > DateTime.now %> 
+                        <%= link_to 'Bearbeiten', edit_tour_path(tour), :class => "btn btn-primary"%>
+                    <% end %>
+                    <%= link_to 'Löschen', tour, :confirm => 'Wirklich wirklich entfernen?', :method => :delete, :class => "btn btn-primary"%> 
+                <% end %>
+                <% if tour.user != current_user %>
+                    <% if tour.start_at > DateTime.now  %>
+                        <% if tour.users.include? current_user %>
+                            <%= link_to " Absagen", :controller => "tours", :action => "cancel", :id => tour.id, :class => "btn btn-primary"%>
+                        <% else %>
+                            <%= link_to "Zusagen", :controller => "tours", :action => "add", :id => tour.id, :class => "btn tn-primary"%>
+                        <% end %>
+                    <% end %>
+                <% end %>
+            <% end %>                        
+        </td>        
+    </tr>
+    <% end %>
+</tbody>
+</table>
+
+<%= render :partial => 'form' %>

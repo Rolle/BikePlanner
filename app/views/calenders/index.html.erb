@@ -1,0 +1,44 @@
+<table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th class="header">Start</th>
+        <th class="header">Ende</th>
+        <th class="header">Wo</th>
+        <th class="header">Was</th>
+        <th class="header">Kommentar</th>
+        <th class="header">Link</th>
+        <th class="header"></th>
+        <th class="header"></th>
+        <th class="header"></th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @calenders.each do |calender| %>
+          <tr>
+            <td><%= calender.begin_of_event.strftime("%d.%m.%Y %k:%M") %></td>  
+            <td><%= calender.end_of_event.strftime("%d.%m.%Y %k:%M") %></td>
+            <td><%= calender.place %></td>
+            <td><%= calender.title %></td>
+            <td><%= calender.comment %></td>
+            <td>
+                <% if !calender.link.nil? %>
+                    <%= link_to 'Details', calender.link, :target => '_blank' %>
+                <% end %>
+            </td>
+            <td></td>   
+            <% if signed_in? %>         
+                <td><a class='btn btn-primary btn-small' data-toggle='modal' href='#modal_new_calender_<%= calender.id.to_s%>' data-backdrop='static'>Bearbeiten</a>
+                <td><%= link_to 'Löschen', calender, :confirm => 'Gaaanz sicher?', :method => :delete, :class => "btn btn-small btn-primary" %></td>
+            <% else %>
+                <td></td>
+                <td></td>
+            <% end %>
+          </tr>
+        <% end %>
+    </tbody>
+</table>
+<%= render :partial => 'form' %>
+<% @calenders.each do |cal| %>
+    <% @calender = cal %>
+    <%= render :partial => 'form' %>
+<% end %>

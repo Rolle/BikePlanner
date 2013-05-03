@@ -1,0 +1,32 @@
+<%= calendar_for(@now.year, @now.month, 
+	:calendar_class => "table table-bordered calendar", 
+	:first_day_of_week => 1, 
+	:use_full_day_names => true, 
+	:yield_surrounding_days => true,
+	:next_month => ["<i class='icon-chevron-right'></i>", lambda { |date| tour_calendar_path(date.year, date.month) }],
+	:previous_month => ["<i class='icon-chevron-left'></i>", lambda { |date| tour_calendar_path(date.year, date.month) }] ) do |day| %>
+	  
+	  <% if tours = tour_on_day(@tours, day) %>
+	  	<% tour_overview(tours, day) %>
+	  <% else %>
+     	<% day.day %>
+	  <% end %>
+<% end %>
+
+
+
+<% @tours.each do |tour| %>
+	<%= render :partial => 'modal_tour', :locals => {:tour => tour} %>
+<% end %>
+
+<%= render :partial => 'form' %>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+  		$(function () {
+    		$("a[rel=popover]").popover({live: true });
+  		});
+	});
+</script>
+
+

@@ -1,0 +1,858 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"last_c",
+				"last_calenders"
+			],
+			[
+				"sig",
+				"signed_in"
+			],
+			[
+				"dist",
+				"distance"
+			],
+			[
+				"distanc",
+				"distances"
+			],
+			[
+				"coo",
+				"coordinates"
+			],
+			[
+				"cale",
+				"calendar"
+			],
+			[
+				"he",
+				"heading"
+			],
+			[
+				"hea",
+				"heading_sub"
+			],
+			[
+				"heading",
+				"heading_sub"
+			],
+			[
+				"succ",
+				"success_span"
+			],
+			[
+				"error_",
+				"error_span"
+			],
+			[
+				"Login",
+				"LoginSuccessfultime"
+			],
+			[
+				"D",
+				"Dashboard"
+			],
+			[
+				"Stati",
+				"Statistik"
+			],
+			[
+				"status_web",
+				"status_webserver_path"
+			],
+			[
+				"stat",
+				"status_loadbalancer_path"
+			],
+			[
+				"clinet",
+				"client_cert"
+			],
+			[
+				"cert",
+				"cert_file"
+			],
+			[
+				"checker",
+				"checkers"
+			],
+			[
+				"error",
+				"error_message"
+			],
+			[
+				"Fund",
+				"FundDescription"
+			],
+			[
+				"amount",
+				"amount_per_bic"
+			],
+			[
+				"amount_per_",
+				"amount_per_country"
+			],
+			[
+				"Sta",
+				"Statistic"
+			],
+			[
+				"up",
+				"upcase"
+			],
+			[
+				"doci",
+				"docimport_documentid_path"
+			],
+			[
+				"hod",
+				"holding_customerid_path"
+			],
+			[
+				"customer",
+				"customer_customerid_path"
+			],
+			[
+				"tra",
+				"tracking"
+			],
+			[
+				"st",
+				"start_with"
+			],
+			[
+				"whe",
+				"where"
+			],
+			[
+				"rat",
+				"ratings"
+			],
+			[
+				"content",
+				"content_tag"
+			],
+			[
+				"group",
+				"group_fell"
+			],
+			[
+				"grop",
+				"group_bekond"
+			],
+			[
+				"current",
+				"current_user"
+			],
+			[
+				"pref",
+				"preferred_group"
+			],
+			[
+				"pre",
+				"preferred_group"
+			],
+			[
+				"per",
+				"permanent"
+			],
+			[
+				"signe",
+				"signed"
+			],
+			[
+				"perma",
+				"permanent"
+			],
+			[
+				"end",
+				"end"
+			],
+			[
+				"change",
+				"change_group"
+			],
+			[
+				"do",
+				"do"
+			],
+			[
+				"coll",
+				"collection"
+			],
+			[
+				"resou",
+				"resources"
+			],
+			[
+				"red",
+				"redirect_to"
+			],
+			[
+				"group_id",
+				"group_id"
+			],
+			[
+				"prefe",
+				"preferred_group"
+			],
+			[
+				"cookie",
+				"cookies"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "config/initializers/session_store.rb",
+			"settings":
+			{
+				"buffer_size": 150,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Projects/ruby/TwitterBikePlanner/test_mail.rb",
+			"settings":
+			{
+				"buffer_size": 1691,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/initializers/wrap_parameters.rb",
+			"settings":
+			{
+				"buffer_size": 517,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 244 files for \"rails4test\"\n\nC:\\Projects\\ruby\\Bikeplanner\\Bikeplanner.sublime-workspace:\n  236  		\"/C/Projects/ruby/Bikeplanner/config/environment.rb\",\n  237  		\"/C/Projects/ruby/Bikeplanner/config/environments/development.rb\",\n  238: 		\"/C/Projects/ruby/Rails4Test/app/controllers/users_controller.rb\",\n  239: 		\"/C/Projects/ruby/Rails4Test/app/controllers/comments_controller.rb\",\n  240: 		\"/C/Projects/ruby/Rails4Test/app/controllers/application_controller.rb\",\n  241  		\"/C/Projects/ruby/Bikeplanner/config/application.rb\",\n  242: 		\"/C/Projects/ruby/Rails4Test/app/models/user.rb\",\n  243: 		\"/C/Projects/ruby/Rails4Test/app/controllers/posts_controller.rb\",\n  244: 		\"/C/Projects/ruby/Rails4Test/app/controllers/ratings_controller.rb\",\n  245: 		\"/C/Projects/ruby/Rails4Test/app/controllers/groups_controller.rb\",\n  246: 		\"/C/Projects/ruby/Rails4Test/app/controllers/calenders_controller.rb\",\n  247: 		\"/C/Projects/ruby/Rails4Test/app/controllers/tours_controller.rb\",\n  248: 		\"/C/Projects/ruby/Rails4Test/config/environment.rb\",\n  249: 		\"/C/Projects/ruby/Rails4Test/Gemfile\",\n  250: 		\"/C/Projects/ruby/Rails4Test/config/initializers/setup_mail_twitter.rb\",\n  251  		\"/C/Projects/ruby/TwitterBikePlanner/app/views/comments/_last.html.erb\",\n  252  		\"/C/Projects/ruby/TwitterBikePlanner/test_mail.rb\",\n\nC:\\Projects\\ruby\\Bikeplanner\\config\\initializers\\session_store.rb:\n    1  # Be sure to restart your server when you modify this file.\n    2  \n    3: Bikeplanner::Application.config.session_store :cookie_store, key: '_Rails4Test_session'\n    4  \n\nC:\\Projects\\ruby\\Bikeplanner\\config\\routes.rb:\n    1: Rails4Test::Application.routes.draw do\n    2    resources :groups\n    3  \n\n14 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 1720,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 3645,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1330,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 129.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Projects/ruby/Rails4Test/Gemfile",
+		"/C/Projects/ruby/Bikeplanner/config/initializers/secret_token.rb",
+		"/C/Projects/ruby/Bikeplanner/config/environments/test.rb",
+		"/C/Projects/ruby/Bikeplanner/config/environments/production.rb",
+		"/C/Projects/ruby/Bikeplanner/config/boot.rb",
+		"/C/Projects/ruby/Bikeplanner/config/environment.rb",
+		"/C/Projects/ruby/Bikeplanner/config/environments/development.rb",
+		"/C/Projects/ruby/Rails4Test/app/controllers/users_controller.rb",
+		"/C/Projects/ruby/Rails4Test/app/controllers/comments_controller.rb",
+		"/C/Projects/ruby/Rails4Test/app/controllers/application_controller.rb",
+		"/C/Projects/ruby/Bikeplanner/config/application.rb",
+		"/C/Projects/ruby/Rails4Test/app/models/user.rb",
+		"/C/Projects/ruby/Rails4Test/app/controllers/posts_controller.rb",
+		"/C/Projects/ruby/Rails4Test/app/controllers/ratings_controller.rb",
+		"/C/Projects/ruby/Rails4Test/app/controllers/groups_controller.rb",
+		"/C/Projects/ruby/Rails4Test/app/controllers/calenders_controller.rb",
+		"/C/Projects/ruby/Rails4Test/app/controllers/tours_controller.rb",
+		"/C/Projects/ruby/Rails4Test/config/environment.rb",
+		"/C/Projects/ruby/Rails4Test/config/initializers/setup_mail_twitter.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/comments/_last.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/test_mail.rb",
+		"/C/Java/ruby20/lib/ruby/gems/2.0.0/gems/mail-2.5.3/lib/mail/network/delivery_methods/smtp.rb",
+		"/C/Java/ruby20/lib/ruby/2.0.0/net/smtp.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tour_mailer/new_tour.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/controllers/tours_controller.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/config/environments/production.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/Gemfile",
+		"/C/Java/ruby20/lib/ruby/gems/2.0.0/gems/activesupport-3.2.13/lib/active_support/dependencies.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/log/production.log",
+		"/C/Projects/ruby/PictureMap/Gemfile.lock",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/calenders/index.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/helpers/application_helper.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tours/_details.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/calenders/show.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/calenders/_form.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/layouts/application.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/controllers/application_controller.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tours/_form.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/assets/stylesheets/bootstrap.css",
+		"/C/Projects/ruby/TwitterBikePlanner/app/assets/stylesheets/overwrite.css",
+		"/C/Projects/ruby/TwitterBikePlanner/app/assets/javascripts/application.js",
+		"/C/Projects/ruby/TwitterBikePlanner/config/environments/development.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/assets/javascripts/jquery-ui-timepicker-addon.js",
+		"/C/Projects/ruby/TwitterBikePlanner/app/models/tour.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tours/month.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/models/group.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/db/seeds.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/models/user.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/calenders/_last.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tours/_last.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tracks/_last.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/posts/_last.html.erb",
+		"/C/Projects/ruby/bootstrap.css.ori",
+		"/C/Projects/ruby/TwitterBikePlanner/app/models/internet_new.rb",
+		"/home/roland/projects/TwitterBikePlanner/config/environments/development.rb",
+		"/home/roland/projects/TwitterBikePlanner/app/views/tracks/index.html.erb",
+		"/home/roland/projects/TwitterBikePlanner/log/production.log",
+		"/C/Projects/ruby/TwitterBikePlanner/app/assets/javascripts/jquery-1.8.1.js",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/comments/withouttour.js.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/controllers/comments_controller.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/comments/_new.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/log/development.log",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/comments/_modal_new.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/comments/create_main.js.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/config/routes.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tours/_modal_tour.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/TwitterBikePlanner.sublime-project",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tracks/_show.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/assets/javascripts/KML.js",
+		"/C/Projects/ruby/TwitterBikePlanner/app/assets/javascripts/GPX.js",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/posts/show.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/posts/index.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/public/Meulenwald.kml",
+		"/C/Projects/ruby/TwitterBikePlanner/public/Meulenwald.gpx",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tracks/_track.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/comments/_comments.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/ratings/_ratings.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/lib/parser.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/ratings/_rating.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tracks/index.html.erb",
+		"/C/Temp/shramov-leaflet-plugins-58330e6/examples/gpx-speed.html",
+		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/de.yml",
+		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/en.yml",
+		"/C/Projects/ruby/CyCup/lib/trackparser.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/lib/Meulenwald.kml",
+		"/C/Projects/ruby/TwitterBikePlanner/app/controllers/tracks_controller.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tracks/show.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/lib/date_time_helper.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/models/weather.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/lib/kml_parser.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/public/Schiefer-wackenWeg.kml",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/sessions/imprint.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/layouts/_ga.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/config/locales/de.yml",
+		"/C/Projects/ruby/TwitterBikePlanner/config/locales/en.yml",
+		"/C/Projects/ruby/TwitterBikePlanner/config/application.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/tour/de.yml",
+		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/track/de.yml",
+		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/track/en.yml",
+		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/tour/en.yml",
+		"/C/Projects/ruby/TwitterBikePlanner/app/helpers/tours_helper.rb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/ratings/_new.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/tours/_close.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/status/webserver.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/order/entrydate.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/order/bicentrydate.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/log/customeriddate.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/docimport/monthlystat.html.erb",
+		"/C/Projects/ruby/UDPClient.rb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/tracking/issuerorderid.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/statistic/geo.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/order/priceday.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/order/issuerorderid.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/order/day.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/mt535/customerid.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/mt535/bic.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/message/processguid.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/log/today.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/log/logsessionid.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/log/fromto.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/layouts/application.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/holding/customerid.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/docimport/documentid.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/dashboards/index.html.erb",
+		"/C/Projects/ruby/BigSwiftBrother/app/views/customer/customerid.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/weather/_last.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/ratings/_last.html.erb",
+		"/C/Projects/ruby/TwitterBikePlanner/app/views/internet_news/_last.html.erb"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Projects\\ruby\\Bikeplanner",
+			"C:\\Projects\\ruby\\TwitterBikePlanner\\app\\controllers",
+			"C:\\Projects\\ruby\\TwitterBikePlanner\\app\\",
+			"C:\\Projects\\ruby\\TwitterBikePlanner\\app\\assets\\javascripts",
+			"C:\\Projects\\ruby\\BigSwiftBrother\\app\\javascripts",
+			"C:\\Projects\\ruby\\BigSwiftBrother\\app\\",
+			"C:\\Projects\\ruby\\BigSwiftBrother\\app\\views",
+			"C:\\Projects\\ruby\\BigSwiftBrother\\app\\assets",
+			"C:\\Projects\\ruby\\BigSwiftBrother"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"rails4test",
+			"all",
+			"find(:all)",
+			"strf",
+			"table",
+			"calendar",
+			"gly",
+			"test",
+			"alert(",
+			"alert",
+			"confirm",
+			"\"test\"",
+			"\"test",
+			"\"test\"",
+			"test",
+			"polylin",
+			"marker",
+			"parsePoint",
+			"parse_trkseg",
+			"onadd",
+			"parsePoint",
+			"marker",
+			"DateTimeHelper",
+			"dropdown",
+			"insert",
+			"well",
+			"default",
+			"L.Icon.Default.imagePath",
+			"images",
+			"default",
+			"images",
+			"L.Icon.Default.imagePath",
+			"clickable",
+			"dashboa",
+			"td",
+			"print",
+			"h4",
+			"https://",
+			"end",
+			"statbic",
+			"PRODUCTION",
+			"_DEV:",
+			" << \"\"",
+			"@orders_hash",
+			"btn",
+			"        <%= ",
+			"primary",
+			"body",
+			"51",
+			"group_dropdown",
+			"group_drop",
+			"group_down",
+			"daemons",
+			"group_dropdown",
+			"sess",
+			"daemon",
+			"url",
+			"daemon",
+			"tour_calender",
+			"th",
+			"daemon",
+			"backgrou",
+			"columnize",
+			"column",
+			"daemon",
+			"daemons",
+			"daemon",
+			"blockquote",
+			"over",
+			"E565",
+			"table",
+			"text",
+			"td",
+			"email",
+			"logo",
+			".gif",
+			"group_id => 5",
+			"###",
+			"error",
+			"put",
+			"49.788874",
+			"49.78887449",
+			"section-title",
+			"description",
+			"name"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"th",
+			"",
+			"production",
+			"_development:",
+			"@result_hash",
+			"group_id => 6"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "config/initializers/session_store.rb",
+					"settings":
+					{
+						"buffer_size": 150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Projects/ruby/TwitterBikePlanner/test_mail.rb",
+					"settings":
+					{
+						"buffer_size": 1691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1527,
+								1691
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 608.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/initializers/wrap_parameters.rb",
+					"settings":
+					{
+						"buffer_size": 517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 1720,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										264,
+										274
+									],
+									[
+										340,
+										350
+									],
+									[
+										419,
+										429
+									],
+									[
+										564,
+										574
+									],
+									[
+										623,
+										633
+									],
+									[
+										699,
+										709
+									],
+									[
+										777,
+										787
+									],
+									[
+										854,
+										864
+									],
+									[
+										934,
+										944
+									],
+									[
+										1010,
+										1020
+									],
+									[
+										1072,
+										1082
+									],
+									[
+										1120,
+										1130
+									],
+									[
+										1536,
+										1546
+									],
+									[
+										1619,
+										1629
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								897,
+								897
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 3645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11,
+								11
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 1330,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1330,
+								1330
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 212.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"style",
+				"app/assets/stylesheets/style.css"
+			],
+			[
+				"_",
+				"app/views/tracks/_list.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Projects/ruby/Swift/Swift.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 270.0,
+	"status_bar_visible": true
+}

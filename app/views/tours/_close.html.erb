@@ -1,0 +1,67 @@
+
+<%= form_for(tour, :remote => true, :url => close_tour_path(tour), :html => {:class => "form-horizontal", :multipart => true}) do |f| %>  
+  <% if tour.errors.any? %>
+    <div class ="alert-message error" id="error_explanation">
+      <h2><%= pluralize(@tour.errors.count, "error") %> Fehler verhindern das Speichern:</h2>
+      <ul>
+        <% @tour.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="control-group">
+    <%= f.label t('views.tour._close.riding_time'), :class=>'control-label'%>
+    <div class="controls">
+      <%= f.number_field :duration, :class=>"span3"%>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label t('views.tour._close.distance'), :class=>'control-label'%>
+    <div class="controls">
+      <%= f.text_field :distance, :class=>"span3" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label t('views.tour._close.alt') , :class=>'control-label'%>
+    <div class="controls">
+      <%= f.text_field :alt, :class=>"span3" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label t('views.tour._close.track') , :class=>'control-label'%>
+    <div class="controls">
+      <%= f.text_field :route, :class=>"span8" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label t('views.tour._close.info'), :class=>'control-label'%>
+    <div class="controls">
+      <%= f.text_field :link, :class=>"span6" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label t('views.tour._close.kmlgpx'), :class=>'control-label'%>
+    <div class="controls">
+      <%= f.file_field :track %>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <%= f.submit t('views.tour._close.save'), :class=>"btn btn-primary" %>
+    </div>
+  </div>
+<% end %>
+
+
+<script  type="text/javascript">
+  $('.start-at-datetime').datetimepicker( 
+    {dateFormat: 'dd.mm.yy ', timeFormat: 'hh:mm:ss ', ampm: true,
+      timeText: 'Uhrzeit',
+      hourText: 'Stunde',
+      minuteText: 'Minute',
+      currentText: 'Aktuell',
+      closeText: "Fertig",
+      currentText: "Jetzt!"
+    });
+</script>

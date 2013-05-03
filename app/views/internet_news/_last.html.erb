@@ -1,0 +1,10 @@
+<div class="section">
+  	<div class="section-title"><h5>News</h5></div>
+  	<div class="section-content">
+  		<ul>
+	  		<% @last_internet_news.crumbs.each do |crumb| %>
+	  			<li><%= link_to crumb.text, crumb.link, :target => '_blank'  %></li>
+	  		<% end %>
+	  	</ul>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+<h3>Kalender:</h3>
+
+<%= calendar_for(@now.year, @now.month, 
+	:calendar_class => "table table-bordered", 
+	:first_day_of_week => 1, 
+	:use_full_day_names => true, 
+	:next_month => ["&raquo;", lambda { |date| event_calendar_path(date.year, date.month) }],
+	:previous_month => ["&laquo;", lambda { |date| event_calendar_path(date.year, date.month) }] ) do |day| %>
+  <% if event = event_on_day(@events, day) %>
+      <% ["<b>"+day.day.to_s+"</b><br/><a rel='popover' data-controls-modal='modal_event"+event.id.to_s+"' data-backdrop='static' data-content='test' data-original-title='"+twipsy_event(event)+"'>"+event.title + " min.</a>",
+	     { :class => "dayWithEvents" }] %>
+  <% else %>
+      <% day.day %>
+  <% end %>
+<% end %>
+
+<% @events.each do |event| %>
+	<%= render :partial => 'modal_event', :locals => {:event => event} %>
+<% end %>
+
+<%= render :partial => 'form' %>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+  $(function () {
+    $("a[rel=popover]").twipsy({live: true });
+  });
+});
+</script>

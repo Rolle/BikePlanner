@@ -1,0 +1,114 @@
+<div class="tabbable">
+  <ul id="tab" class="nav nav-tabs">
+    <li class="active"><a href="#track_<%=@track.id%>" data-toggle="tab"><%= t('views.tour._show.track')%></a></li>
+    <li>               <a href="#profile_<%=@track.id%>" data-toggle="tab"><%= t('views.tour._show.profile')%></a></li>
+  </ul>
+
+  <div id="myTabContent" class="tab-content">      
+    <div class="tab-pane fade active in" id="track_<%=@track.id%>">
+      <% if !@track.nil? and !@track.track_file_name.nil? %>
+        <div style="width:1000px; height:640px" id ="map-<%=@track.id%>"></div>
+          <script type='text/javascript'>    
+            L.Icon.Default.imagePath = '<%= asset_path "" %>';
+            var map = new L.Map('map-<%= @track.id %>', { zoom: 11});
+            var osm = new L.TileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png');
+
+            map.addLayer(osm);
+
+            var track;
+
+            <% if @track.track_file_name.upcase.ends_with? "KML" %>
+              track = new L.KML('<%= root_url(:only_path => false) + @track.track.url %>', {async: true});
+            <% else %>
+              track = new L.GPX('<%= root_url(:only_path => false) + @track.track.url %>', {async: true});
+              //marker = L.marker([49.80176460,6.775622370]).addTo(track);
+            <% end %>
+
+            track.on("loaded", function(e) { map.fitBounds(e.target.getBounds()); }); 
+            map.addLayer(track);  
+            map.addControl(new L.Control.Layers({}, {'Track':track}));
+          </script>
+      <% end %>
+      <p></p>
+      
+      <%= render :partial => 'tours/details', :locals => {:tour => @track} %>
+      <%= render :partial => 'comments/comments', :locals => {:comments => @track.comments } if @track.comments %>
+      <%= render :partial => 'ratings/ratings', :locals => {:ratings => @track.ratings } if @track.ratings %>
+    </div>
+    <div class="tab-pane fade in" id="profile_<%=@track.id%>">
+      <% if @parser %>
+        <div id="trackprofile" style="width: 1000px; height: 600px;"></div>
+        <script>
+
+         var chart;
+            $(document).ready(function() {
+                chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'trackprofile',
+                        type: 'line'
+                    },
+                    title: {
+                        text: 'Höhenprofil der Tour'
+                    },
+                    xAxis: {
+                        type: 'number',
+                        title: {
+                            text: 'KM'
+                        },
+                        //maxZoom: 14*24*3600000;
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'HM'
+                        },
+                        min: 0
+                    },
+                    tooltip: {
+                        formatter: function() {
+                                return '<b>'+ this.series.name +'</b><br/>'+ this.y +' m, ' + this.x + ' km' ;                                
+                        }
+                    },
+                    plotOptions: {
+                      area: {
+                          fillColor: {
+                              linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
+                              stops: [
+                                  [0, Highcharts.getOptions().colors[0]],
+                                  [1, 'rgba(2,0,0,0)']
+                              ]
+                          },
+                          lineWidth: 1,
+                          marker: {
+                              enabled: false,
+                              states: {
+                                  hover: {
+                                      enabled: true,
+                                      radius: 5
+                                  }
+                              }
+                          },
+                          shadow: false,
+                          states: {
+                              hover: {
+                                  lineWidth: 1
+                              }
+                          }
+                      }
+                    },
+                    series: [{
+                        name: 'Höhenmeter',
+                        type: 'area',
+                        data: [
+                          <% @parser.coordinates.each do |c| %>
+                            <%= '[' + c.dist.to_s + "," + c.alt.to_s + "]," %>
+                          <% end %>
+                        ]}]                    
+                });
+            });
+        </script>
+      <% else %>
+        <h5>Kein Höhenprofil verfügbar.</h5>
+      <% end %>
+    </div>
+  </div>
+</div>

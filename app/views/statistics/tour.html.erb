@@ -1,0 +1,42 @@
+<table class="table table-bordered table-striped" id="stat_tour_table">
+    <thead>
+        <tr>
+            <th>Wohin</th>    
+            <th>KM</th>
+            <th>HM</th>
+            <th>Dauer (min.)</th>
+            <th>Durchschnitt</th>
+            <th>Mitfahrer</th>
+            <th>Wann</th>
+            <th>Womit</th>
+            <th>Wer</th>
+            <th>Index</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @tours.each do |tour| %>
+            <tr>
+                <td><%= tour.route %></td> 
+                <td><%= tour.distance %></td> 
+                <td><%= tour.alt %></td> 
+                <td><%= tour.duration %></td> 
+                <td><%= ((tour.distance.to_f / tour.duration) * 60).round(2).to_s %></td>
+                <td><%= tour.users.count.to_s %></td> 
+                <td><%= tour.start_at.strftime("%d.%m.%Y %k:%M") %></td>
+                <td><%= tour.tour_type %></td>    
+                <td><%= tour.user.name if tour.user %></td>           
+                <td><%= tour.index.round(2).to_s %>     
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+
+<script type="text/javascript" src="/assets/jquery.tablesorter.min.js"></script> 
+<script>
+$(document).ready(function() 
+    { 
+        $("#stat_tour_table").tablesorter({sortList: [[0,0],[1,0]]}); 
+    } 
+); 
+</script>

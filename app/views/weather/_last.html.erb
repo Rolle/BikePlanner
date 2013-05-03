@@ -1,0 +1,19 @@
+<div class="section">
+  	<div class="section-title"><h5>Wetter</h5></div>
+  	<div class="section-content">
+  		<ul class="unstyled">
+  			<% if @weather.forecasts.empty? %>
+  				Nicht verf;uml&gbar
+  			<% else %>
+		  		<% @weather.forecasts.each do |forecast| %>
+		  			<li>
+		  				<%= image_tag forecast.icon, :size => "20x20"%>
+		  				<%= forecast.day_of_week %>
+		              	<%= forecast.low + "-" + forecast.high + " Grad, "%>
+	              		<%= forecast.condition %>
+		  			</li>
+		  		<% end %>
+	  		<% end %>
+	  	</ul>
+	</div>
+</div>

@@ -1,0 +1,118 @@
+# ruby encoding: utf-8
+
+en:
+ views:
+  show: Show
+  tour: 
+   menu: Tours
+   sub:
+    all: All
+    month: Month
+    own: Own
+    diary: Diary
+    new: New Tour
+    notclosed: Not closed
+   month:    
+    heading: Tours
+    heading_sub: When, who and where
+   _modal:
+    details: Tourdetails
+    comments: Comments
+    ratings: Ratings
+    close: Close
+    track: Track
+    nocomments: No comments
+    average: Average
+    ratings_after_start: Rating not until start of tour
+    alread_closed: Tour is already closed
+    not_started: Tour not started
+   detail:
+    distance: Kilometer
+    alt: Altitude
+    type: Type
+    duration: Duration
+    meetingpoint: Meeting point
+    route: Route
+    confirmed: Permitted
+    declined: Canceled
+    edit: Edit
+    confirm: Confirm
+    decline: Cancel
+   _new_comment:
+    comment: Comment
+    save: Save
+   _rating:
+    speed: Speed
+    route: Track
+    rating: Final grade
+   _form:
+    create: Create new tour
+    riding_time: Riding time (minutes)
+    type: Road or MTB
+    planned_track: Planned track
+    meeting_point: Meeting point
+    start_at: Start at
+    info: Link
+    save: Save
+   _close:
+    alt: Altitude
+    distance: Kilometers
+    track: Track
+    info: More info at
+    kmlgpx: KML or GPX track
+    create: Create new tour
+    riding_time: Riding time (minutes)
+    type: Road or MTB
+    planned_track: Planned track
+    meeting_point: Meeting point
+    start_at: Start at
+    info: Link
+    save: Save
+   _new_rating:
+    speed: Speed
+    route: Track
+    rating: Final grade
+    rate: Rate
+    top: Top
+    flat: Too flat
+    too_often: Seen to often
+    rangy: Too rangy
+    boring: Boring
+    optimal: Optimal
+    to_slow: Too sloooowww
+    to_fast: We are not racers!
+    outstanding: Outstanding
+    good: Good
+    satisfying: Satisfying
+    adequate: Adequate
+    bad: Bad
+  track:
+   menu: Tracks
+   index:
+    heading: Tracks
+    heading_sub: Who rides where
+   _show:
+    track: Track
+    profile: Altitude
+
+  user:
+   menu: Passenger
+   profil: Profile
+   index:
+    heading: Passenger
+    heading_sub: Slipstreamer
+  post:
+   menu: News
+   index:
+    heading: News
+    heading_sub: what is around
+  calendar:
+   menu: Calendar
+   index:
+    heading: Events
+    heading_sub: interesting things
+  statistic:
+   menu: Ranking
+   index:
+    heading: Rangkings
+    heading_sub: but not whith kilometers etc.

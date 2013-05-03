@@ -1,0 +1,39 @@
+<%= form_for(new_rating, :remote => true, :html => { :class => "form-horizontal"}) do |f| %>
+	<div class="control-group">
+		<%= f.label t('views.tour._new_rating.route'), :class => "control-label" %>
+		<div class="controls">
+	  		<%= f.select :route, options_for_select({
+	  			t('views.tour._new_rating.top') => 1, 
+	  			t('views.tour._new_rating.flat') =>2,
+	  			t('views.tour._new_rating.too_often')=>3,
+	  			t('views.tour._new_rating.rangy') => 4,
+	  			t('views.tour._new_rating.boring') => 5,}), :class=>"input-mini" %>
+	  	</div>
+	</div>
+	<div class="control-group">
+	  	<%= f.label t('views.tour._new_rating.speed'), :class => "control-label" %>
+	  	<div class="controls">
+	  		<%= f.select :speed, options_for_select({
+	  			t('views.tour._new_rating.optimal') => 1, 
+	  			t('views.tour._new_rating.to_slow') =>2,
+	  			t('views.tour._new_rating.to_fast')=>3,}), :class=>"input-mini" %>
+	  	</div>
+	</div>
+	<div class="control-group">
+		<%= f.label t('views.tour._new_rating.rating'), :class => "control-label" %>
+		<div class="controls">
+	  		<%= f.select :rating, options_for_select({
+	  			t('views.tour._new_rating.outstanding') => 1, 
+	  			t('views.tour._new_rating.good') =>2,
+	  			t('views.tour._new_rating.satisfying')=>3,
+	  			t('views.tour._new_rating.adequate') => 4,
+	  			t('views.tour._new_rating.bad') => 5,}), :class=>"input-mini" %>
+	  	</div>
+	</div>
+	<div class="control-group">
+		<div class="controls">
+			<%= f.hidden_field :tour_id, { :value => tour.id } %>
+			<%= f.submit t('views.tour._new_rating.rate'), :class=>"btn btn-primary" %>    
+		</div>
+	</div>	
+<% end %>

@@ -1,0 +1,25 @@
+<div class="well">
+  <table class="table table-condensed">
+    <tbody>
+      <tr>
+        <td><b>Titel</b></td>
+        <td><%= @post.title %></td>
+      </tr>
+      <tr>
+        <td><b>Text</b></td>
+        <td><%= @post.text %></td>
+      </tr>
+
+      <tr>
+        <td><b>Link</b></td>
+        <td><%= @post.link %></td>
+      </tr>
+
+      <tr>
+        <td><b>Vom</b></td>
+        <td><%= @post.created_at.strftime("%d.%m.%Y %k:%M") %></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

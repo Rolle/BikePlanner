@@ -1,0 +1,8 @@
+<div class="section">
+  	<div class="section-title"><h5>Neueste Tracks</h5></div>
+  	<div class="section-content">
+  		<% @last_tracks.each do |track| %>
+  			<div><%= track.track_updated_at.strftime("%d.%m.%y") %> <%= link_to track.route.truncate(30), track_path(track) %></div>
+  		<% end %> 
+	</div>
+</div>

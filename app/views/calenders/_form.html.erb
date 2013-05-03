@@ -1,0 +1,87 @@
+<div id="modal_new_calender_<%=@calender.id.to_s%>" class="modal hide fade">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Neuer Kalendereintrag</h3>
+  </div>
+
+<%= form_for(@calender) do |f| %>
+  <div class="modal-body">    
+    <% if @calender.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@calender.errors.count, "error") %> Fehler verhindern das Speichern:</h2>
+        <ul>
+          <% @calender.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="clearfix">
+      <%= f.label "Titel:" %>
+      <div class="input">
+        <%= f.text_field :title %>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label "Start:" %>
+      <div class="input">
+        <div id="datetimepicker1" class="input-append date">
+          <%= f.text_field :begin_of_event, {:id => "start-at-datetime", :data => {:format=>"dd/MM/yyyy hh:mm:ss"}} %>
+          <span class="add-on">
+            <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label "Ende:" %>
+      <div class="input">
+        <div id="datetimepicker1" class="input-append date">
+          <%= f.text_field :end_of_event,  {:id => "end-at-datetime", :data => {:format=>"dd/MM/yyyy hh:mm:ss"}} %>
+          <span class="add-on">
+            <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label "Findet statt:" %>
+      <div class="input">
+        <%= f.text_field :place %>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label "Kommentar:" %>
+      <div class="input">
+        <%= f.text_area :comment, :rows => "6", :cols => "55" %>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label "Link:" %>
+      <div class="input">
+        <%= f.text_field :link %>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+      <%= f.submit "Speichern", :class=>"btn btn-primary" %>
+  </div>
+  <% end %>
+</div>
+  
+<script  type="text/javascript">
+$(function() {
+    $('.date').datetimepicker({
+      language: 'de-DE',
+      pickSeconds: false,   
+      startDate: Date()      // set a minimum date
+    });
+  });
+</script>

@@ -1,0 +1,31 @@
+.navbar-search {
+  margin-top: 0px;
+}
+
+blockquote p {
+  font-size: 13px;
+}
+
+.dayWithEvents {
+  background-color: #E5E5E5;
+}
+.dayWithEventsNotClosed {
+  background-color: #BD362F; 
+}
+.day_names {
+  background-color: #EEE;
+  /*font-size: 110%;
+  font-style: bold;*/
+}
+form {
+  margin: 0 0 0px;
+}
+
+.calendar thead {
+	background-color: #EEE;
+}
+.calendar td { height: 100px; width: 14.28%; }
+
+.dropdown-menu {
+  z-index: 9999;
+  }

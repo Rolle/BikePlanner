@@ -1,0 +1,36 @@
+<h3>Diese Woche im Programm:</h3>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <% @dates.each_with_index do |date, i| %>
+          <th>
+            <%= date %>
+          </th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <% @grid.each do |tours_one_day| %>
+        <% if tours_one_day %>
+          <td>
+            <table class="table table-bordered">
+              <tbody>
+                <% tours_one_day.each do |tour| %>
+                  <tr>
+                    <%= render :partial => "tour", :locals => {:tour => tour, :current_user => current_user} %>
+                  </tr>
+                <% end %>
+              <tbody>
+            </table>
+          </td>
+        <% else %>
+          <td></td>
+        <% end %>
+      <% end %>  
+    </tr>
+  </tbody>
+</table>
+
+<%= render :partial => 'form' %>

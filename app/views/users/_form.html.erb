@@ -1,0 +1,61 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div class ="alert-message error" id="error_explanation">
+      <h2><%= @user.errors.count.to_s + " Fehler verhindern das Speichern:"%></h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="clearfix">
+    <%= f.label "Name:"%>
+    <div class="input">
+      <%= f.text_field :name, :class => "text" %>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <%= f.label "Email:"%>
+    <div class="input">
+      <%= f.text_field :mail, :class => "text" %>
+    </div>      
+  </div>
+
+  <div class="clearfix">
+    <%= f.label "Telefon:" %>
+    <div class="input">
+      <%= f.text_field :phone, :class => "text" %>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <%= f.label "Benachrichtigung per Mail:" %>
+    <div class="input">
+      <%= f.check_box :notification_allowed, :class => "text"%>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <%= f.label "Passwort:" %>
+    <div class="input">
+      <%= f.password_field :password, :class => "text" %>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <%= f.label "Passwort bestätigen:" %>
+    <div class="input">
+      <%= f.password_field :password_confirmation, :class => "text"%>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <div class="input">
+      <%= f.submit "Anlegen", :class=>"btn-primary"%>
+    </div>
+  </div>
+<% end %>

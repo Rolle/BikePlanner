@@ -1,0 +1,71 @@
+<h3>Eintrag ändern</h3>
+
+<%= form_for(@calender) do |f| %>
+  <div class="modal-body">    
+    <% if @calender.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@calender.errors.count, "error") %> Fehler verhindern das Speichern:</h2>
+        <ul>
+          <% @calender.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="clearfix">
+      <%= f.label "Titel:" %>
+      <div class="input">
+        <%= f.text_field :title %>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label "Start:" %>
+      <div class="input">
+        <%= f.text_field :begin_of_event, :class=>"start-at-datetime" %>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label "Ende:" %>
+      <div class="input">
+        <%= f.text_field :end_of_event, :class=>"start-at-datetime" %>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label "Findet statt:" %>
+      <div class="input">
+        <%= f.text_field :place %>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label "Kommentar:" %>
+      <div class="input">
+        <%= f.text_area :comment, :rows => "6", :cols => "55" %>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label "Link:" %>
+      <div class="input">
+        <%= f.text_field :link %>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <div class="input">
+        <%= f.submit "Speichern", :class=>"btn-primary" %>
+      </div>
+  </div>
+  
+<% end %>
+
+<%= render 'form' %>
+
+<script  type="text/javascript">
+  $('.start-at-datetime').datetimepicker({dateFormat: 'dd.mm.yy ', timeFormat: 'hh:mm:ss ', ampm: true});
+</script>

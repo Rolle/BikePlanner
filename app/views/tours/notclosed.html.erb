@@ -1,0 +1,29 @@
+<table class="table table-bordered  table-striped">
+    <thead>
+        <tr>
+            <th>Wann</th>
+            <th>Wo</th>
+            <th>Dauer</th>
+            <th>Womit</th>
+            <th>Wer</th>
+            <th>Wohin</th>    
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @tours.each do |tour| %>
+            <tr>
+                <td><%= tour.start_at.strftime("%d.%m.%Y %k:%M") %></td>
+                <td><%= tour.meeting_point %></td>
+                <td><%= tour.duration %></td>
+                <td><%= tour.tour_type %></td>    
+                <td><%= tour.user.name if tour.user %></td>
+                <td><%= tour.route %></td>
+                <td><a class='btn btn-primary' data-toggle='modal' href="#modal_tour<%= tour.id.to_s %>" data-backdrop='static'><i class='icon-check'></i> Abschliessen</a></td>        
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+<% @tours.each do |tour| %>
+    <%= render :partial => 'modal_tour', :locals => {:tour => tour} %>
+<% end %>

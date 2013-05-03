@@ -1,0 +1,42 @@
+<h3>Tour ändern:</h3>
+
+<%= form_for(@tour_to_edit, :html => {:class => "well"}) do |f| %>
+  <div class="modal-body">    
+    <% if @tour.errors.any? %>
+      <div class ="alert-message error" id="error_explanation">
+        <h2><%= pluralize(@tour.errors.count, "error") %> Fehler verhindern das Speichern:</h2>
+        <ul>
+          <% @tour.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <%= f.label "Länge (Minuten):" %>
+    <%= f.number_field :duration, :class=>"text"%>
+
+    <%= f.label "Rennrad oder MTB" %>
+    <%= f.select :tour_type, "<option value='Rennrad'>Rennrad</option><option value='MTB'>MTB</option><option value='Veranstaltung'>Veranstaltung</option>", :class=>"text" %>
+
+    <%= f.label "geplante Route:" %>
+    <%= f.text_field :route, :class=>"text" %>
+
+    <%= f.label "Treffpunkt:" %>
+    <%= f.text_field :meeting_point, :class=>"text" %>
+
+    <%= f.label "Startzeit:" %>
+    <%= f.text_field :start_at, :class=>"start-at-datetime" %>
+
+    <%= f.label "Mehr Info unter:"%>
+    <%= f.text_field :link, :class=>"text" %>
+
+    <div class="input">
+      <%= f.submit "Speichern", :class=>"btn btn-primary" %>
+    </div>
+
+  </div>  
+
+<% end %>
+
+<%= render 'form' %>

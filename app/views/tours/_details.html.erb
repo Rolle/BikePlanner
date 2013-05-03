@@ -1,0 +1,50 @@
+<p><b><%= tour.start_at.strftime("%d.%m.%Y %k:%M") %> Uhr:</b></p>
+<table class="table table-condensed">
+  <tbody>
+    <tr><td><%= t('views.tour.detail.duration')%>:</td><td><%= tour.duration %> Minuten</td></tr>
+    <tr><td><%= t('views.tour.detail.distance')%>:</td><td><%= tour.distance %> Kilometer</td></tr>
+    <tr><td><%= t('views.tour.detail.alt')%>:</td><td><%= tour.alt %> Meter</td></tr>
+    <tr><td><%= t('views.tour.detail.type')%>:</td><td><%= tour.tour_type %></td></tr>
+    <tr><td><%= t('views.tour.detail.route')%>:</td><td><%= tour.route %></td></tr>
+    <tr><td><%= t('views.tour.detail.meetingpoint')%>:</td><td><%= tour.meeting_point %></td></tr>
+    <tr>
+    <td><%=t('views.tour.detail.confirmed')%>: </td> 
+      <td class="green">
+        <% tour.confirmed_attendees.each do |ta| %> 
+          <li>
+            <% if signed_in? %>
+              <%= link_to ta.user.name, user_path(ta.user) %>                  
+            <% else %>
+              <%= ta.user.name %>
+            <% end %>
+          </li>
+        <% end %>
+      </td>
+    </tr>
+    <tr><td><%=t('views.tour.detail.declined')%>: </td>
+      <td>
+        <% tour.unconfirmed_attendees.each do |ta| %> 
+          <li>
+            <% if signed_in? %>
+              <%= link_to ta.user.name, user_path(ta.user) %>                  
+            <% else %>
+              <%= ta.user.name %>
+            <% end %>
+          </li>
+        <% end %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<% if (signed_in? and tour.user_id == current_user.id and tour.start_at > DateTime.now) or (signed_in? and current_user.is_admin? )%>
+  <%= link_to t('views.tour.detail.edit'), edit_tour_path(tour), {:class =>"btn btn-primary"} %>
+<% end %>
+
+<% if  signed_in? and tour.start_at > DateTime.now %>
+  <% if tour.unconfirmed?(current_user) || (!tour.confirmed?(current_user) && !tour.unconfirmed?(current_user)) %>
+    <%= link_to t('views.tour.detail.confirm'), add_tour_path(tour), {:class =>"btn btn-success"} %>
+  <% end %>
+  <% if tour.confirmed?(current_user) || (!tour.confirmed?(current_user) && !tour.unconfirmed?(current_user)) %>
+    <%= link_to t('views.tour.detail.decline'), cancel_tour_path(tour), {:class =>"btn btn-danger"} %>
+  <% end %>
+<% end %>

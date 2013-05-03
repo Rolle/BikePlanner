@@ -1,0 +1,8 @@
+<div class="section">
+  	<div class="section-title"><h5>Neuigkeiten</h5></div>
+  	<div class="section-content">
+  		<% @last_posts.each do |post| %>
+  			<p><%= link_to post.title.first(40), post_path(post) %></p>
+  		<% end %>
+	</div>
+</div>

@@ -1,0 +1,39 @@
+<table class="table table-bordered table-striped" id="highscore_table">
+    <!--table class="tablesorter" id="highscore_table"-->
+    <thead>
+      <tr>
+        <th>Fahrer</th>
+        <th>Erstellte Touren</th>
+        <th>Mitfahrer bei eigenen Touren</th>
+        <th>Mitgefahrene Touren</th>
+        <th>Kommentare</th>
+        <th>Kalendereinträge</th>
+        <th>Neuigkeiten</th>
+        <th>Gesamtpunkte</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @group.users.each do |user| %>
+          <tr>
+            <td><%= user.name %></td>  
+            <td><%= user.score_tours(@group.id)%></td>
+            <td><%= user.score_tour_attendees(@group.id) %></td>
+            <td><%= user.score_own_attendees(@group.id)%></td>
+            <td><%= user.score_ratings(@group.id)%></td>           
+            <td><%= user.score_calenders(@group.id)%></td>
+            <td><%= user.score_posts(@group.id)%></td>
+            <td><%= user.score_overall(@group.id)%></td>
+          </tr>
+        <% end %>
+    </tbody>
+</table>
+
+
+<script type="text/javascript" src="/assets/jquery.tablesorter.min.js"></script> 
+<script>
+$(document).ready(function() 
+    { 
+        $("#highscore_table").tablesorter({sortList: [[0,0],[1,0]]}); 
+    } 
+); 
+</script>

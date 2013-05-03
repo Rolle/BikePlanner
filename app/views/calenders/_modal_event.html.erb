@@ -1,0 +1,22 @@
+<div id="modal_event<%=event.id%>" class="modal hide fade">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3><%= event.title%></h3>
+  </div>
+
+  <div class="modal-body">
+    <p><b>Am <%= event.begin_of_event.strftime("%d.%m.%Y %k:%M") %> Uhr bis <%=event.end_of_event.strftime("%d.%m.%Y %k:%M")%>:</b></p>
+    <table class="table table-condensed">
+      <tbody>
+        <tr><td>Ort:</td><td><%= event.place %></td></tr>
+        <tr><td>Kommentar:</td><td><%= event.comment %></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="modal-footer">
+    <% if signed_in?  %>
+      <%= link_to "Bearbeiten", edit_calender_path(event), {:class =>"btn btn-primary"} %>
+    <% end %>
+  </div>
+</div>

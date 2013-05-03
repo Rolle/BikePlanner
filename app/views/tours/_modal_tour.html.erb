@@ -1,0 +1,83 @@
+<div id="modal_tour<%=tour.id%>" class="modal hide fade in">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3><%= tour.user.name%></h3>
+  </div>
+
+  <div class="modal-body">
+    <div class="tabbable">
+      <ul id="tab" class="nav nav-tabs">
+        <li class="active"><a href="#details_<%=tour.id%>" data-toggle="tab"><%= t('views.tour._modal.details')%></a></li>
+        <li><a href="#comments_<%=tour.id%>" data-toggle="tab"><%= t('views.tour._modal.comments')%></a></li>
+        <li><a href="#ratings_<%=tour.id%>" data-toggle="tab"><%= t('views.tour._modal.ratings')%></a></li>
+        <li><a href="#close_<%=tour.id%>" data-toggle="tab"><%= t('views.tour._modal.close')%></a></li>
+        <% if !tour.track_file_name.nil? %>
+          <li><a href="#track_<%=tour.id%>" data-toggle="tab"><%= t('views.tour._modal.track')%></a></li>
+        <% end %>
+        <!--li><a href="#thumb_<%=tour.id%>" data-toggle="tab">Thumbview</a></li-->
+      </ul>
+
+      <div id="myTabContent" class="tab-content">      
+        <div class="tab-pane fade active in" id="details_<%=tour.id%>">
+          <%= render :partial => 'details', :locals => {:tour => tour} %>
+        </div>
+
+        <div class="tab-pane fade in" id="comments_<%=tour.id%>">
+          <div id="tour_comments_<%= tour.id%>">  
+            <% if tour.comments.size() ==  0 %>
+              <p><%= t('views.tour._modal.nocomments')%>.</p>
+            <% else %>
+              <%= render :partial => 'comments/comment', :collection => tour.comments, :as => :comment%>
+            <% end %>
+          </div>
+          <%= render :partial => 'comments/new', :locals => {:tour => tour, :new_comment => comment_if_not_exists(@new_comment)} %>
+        </div>
+
+        <div class="tab-pane fade in" id="ratings_<%=tour.id%>">
+          <% if tour.start_at < DateTime.now  %>
+            <div id="tour_ratings_<%= tour.id%>">                      
+              <% if signed_in? and !tour.rated_by?(current_user) %>
+                <%= render :partial => 'ratings/new', :locals => {:tour => tour, :new_rating => rating_if_not_exists(@new_rating)} %>
+              <% end %>
+              <%= t('views.tour._modal.average')%>: <%= average(tour.ratings) %> / 5 , <%= tour.ratings.size().to_s %> <%= t('views.tour._modal.ratings')%>
+              <%= render :partial => 'ratings/rating', :collection => tour.ratings, :as => :rating %>                        
+            </div>
+          <% else %>
+            <p><%= t('views.tour._modal.ratings_after_start')%></p>
+          <% end %>
+        </div>
+
+        <div class="tab-pane fade in" id="close_<%=tour.id%>">  
+          <% if tour.rated? %>
+            <p><%= t('views.tour._modal.alread_closed')%></p>       
+          <% elsif tour.start_at > DateTime.now %>
+             <p><%= t('views.tour._modal.not_started')%></p>       
+          <% else %>
+            <%= render :partial => "close", :locals => {:tour => tour} %>
+          <% end %>
+        </div>
+
+        <div class="tab-pane fade in" id="track_<%=tour.id%>">
+          <% if !tour.track_file_name.nil? %>
+            <%= render :partial => "map", :locals => {:tour => tour} %>
+          <% end %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+#frame {
+    width: 800px;
+    height: 520px;
+    border: none;
+    -moz-transform: scale(0.2);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.2);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.2);
+    -webkit-transform-origin: 0 0;
+}
+</style>

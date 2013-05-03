@@ -1,0 +1,8 @@
+<div class="section">
+  	<div class="section-title"><h5>Neueste Touren</h5></div>
+  	<div class="section-content">
+  		<% @last_tours.each do |tour| %>
+  			<div><%=tour.start_at.strftime("%d.%m.%y") %> <%= link_to tour.tour_type + ": " +tour.meeting_point.truncate(30), tour_path(tour) %></div>
+  		<% end %> 
+	</div>
+</div>

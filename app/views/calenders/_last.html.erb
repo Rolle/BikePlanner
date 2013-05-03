@@ -1,0 +1,10 @@
+<div class="section">
+  	<div class="section-title"><h5>Termine</h5></div>
+  	<div class="section-content">
+  		<% @last_calenders.each do |cal| %>
+  			<div>
+  				<%=cal.begin_of_event.strftime("%d.%m.%y") %> <%= link_to cal.title.truncate(30), calender_path(cal) %>
+  			</div>
+  		<% end %> 
+	</div>
+</div>

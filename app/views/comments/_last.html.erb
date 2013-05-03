@@ -1,0 +1,24 @@
+<div class="section" id="comments">
+	<div class="section-title"><h5>Kommentare</h5></div>
+	<div class="section-content">
+    <% if signed_in? %>
+         <%= form_tag({:controller => 'comments', :action => 'withouttour'}, :class=>"form-inline", :remote => true, :method => :post) do %>   
+              <%= text_field_tag :single_comment, nil, :class=>"input-medium" %>
+              <%= submit_tag t('views.tour._new_comment.save'), :class=>"btn btn-primary" %>
+        <% end %>
+    <% end %>
+
+
+		<% @last_comments.each do |comment| %>
+      <dl>
+        <dt><%= comment.user.name %> <%= comment.created_at.strftime("%d.%m.%Y %H:%M") %></dt>
+        <dd>
+  			<% if comment.tour && signed_in? %>
+  				  <%= link_to comment.comment.first(40), track_path(comment.tour) %>
+  			<% else %>
+  			    <%= comment.comment.first(40)%>
+  			<% end %>
+      </dl>
+		<% end %>
+  </div>
+</div>

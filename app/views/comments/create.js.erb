@@ -1,0 +1,2 @@
+$('#tour_comments_<%= @tour.id.to_s %>')
+.replaceWith('<%= escape_javascript(render :partial => 'comments/comment', :collection => @tour.comments, :as => :comment)%>')

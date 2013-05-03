@@ -1,0 +1,8 @@
+<div class="section">
+  	<div class="section-title"><h5>Kommentare</h5></div>
+  	<div class="section-content">
+  		<% @last_ratings.each do |rating| %>
+  			<blockquote><p><%= rating.comment %></p><small><%= rating.user.name %></small></blockquote>
+  		<% end %>
+	</div>
+</div>

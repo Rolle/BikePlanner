@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BikePlanner</title>
+    <meta name="description" content="Tool zur Plannung von gemeinsamen Radtouren">
+    <meta name="author" content="Roland Schmitt">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/ga' if Rails.env == 'production' %>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px ;
+      }
+    </style>
+
+  </head>
+
+  <body >
+      <div class="navbar navbar-fixed-top ">
+        <div class="navbar-inner">
+          <div class="container-fluid">
+            <a class="brand" href="#">Bike Planner</a>
+
+            <div class="nav-collapse">
+              <%= menu_builder(@page_id) %>
+              <% if !signed_in? %>
+                <%= form_for(:session, {:url => sessions_path, :html => {:class=> "navbar-form pull-right"}}) do |f| %>
+                  <%= f.text_field :mail, :class => "input-small", :placeholder => "Email" %>            
+                  <%= f.text_field :password, :class => "input-small", :placeholder => "Passwort", :type => :password %>
+                  <button class="btn" type="submit">Anmelden</button>
+                <% end %>
+              <% else %> 
+                <%= form_for(:session, {:url => signout_path, :html =>{:class=>"navbar-form pull-right"}}) do |f| %>                          
+                  <button class="btn" type="submit">Abmelden</button>
+                <% end %>
+                <p class="navbar-text pull-right"><i class="icon-user"></i>
+                  Angemeldet als 
+                  <a href="<%=edit_user_path(current_user.id)%>"><%= current_user.name %>&nbsp;</a>             
+                </p>             
+              <% end %>
+              <ul class="nav pull-right" role="navigation">
+                <!--li id="fat-menu" class="dropdown">
+                  <a href='#' id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Sprache <b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li>
+                      <a tabindex="-1" href='#'>Deutsch</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href='#'>Englisch</a>
+                    </li>
+                  </ul>
+                </li-->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="sidebar-nav">
+            <% if !content_for?(:sidebar) %>            
+              <div class="well well-small">
+                <%= render "tours/last" %>
+              </div>
+              <div class="well well-small">
+                <%= render "comments/last" %>
+              </div>
+              <div class="well well-small">                            
+                <%= render "calenders/last" %>
+              </div>
+              <div class="well well-small">
+                <%= render "tracks/last" %>
+              </div>
+              <div class="well well-small">
+                <%= render "internet_news/last"%>
+              </div>
+              <!--%= render "weather/last"%-->    
+              <!--http://api.wetter.com/location/index/search/DE0002861001/project/bikeplanner/cs/bc68a5a99189fa1f5249bf163e53e35a   
+              Digest::MD5.hexdigest("bikeplanner5338c5293a56242c6713a7a2d358df60DE0002861001")-->
+            <% else %> 
+              <%= yield :sidebar %>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="span9">
+          <div class="row-fluid">
+            <div class="page-header">
+              <%= heading_builder(@page_id) %>
+            </div>    
+            <div class="well well-small">        
+            <%= sub_menu_builder(@page_id) %><br>
+          </div>
+            <%= yield %>
+          </div>                    
+        </div> 
+      </div>
+      <div align="center">
+        <footer class="footer">
+          <ul class="breadcrumb">
+            <li><%= link_to image_tag("twitter.png"), "https://www.twitter.com/bikeplannerfell", :target => '_blank' %> <span class="divider">/</span></li>
+            <li><%= link_to "Kontak", "mailto:bikeplanner@rolandschmitt.info"%> <span class="divider">/</span></li>
+            <li><%= link_to "Impressum", imprint_path %> <span class="divider">/</span></li>            
+            <li><%= link_to "Changelog", changelog_path %> <span class="divider">/</span></li>            
+            <li>
+              <% if session[:locale] == :de || session[:locale] == ""%>
+                <%= image_tag "en.gif"%> <%= link_to "English", root_url(:only_path => false) +"en" %>
+              <% else %>
+                <%= image_tag "de.gif"%> <%= link_to "Deutsch", root_url(:only_path => false) +"de" %>
+              <% end %>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html> 

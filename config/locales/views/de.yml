@@ -1,0 +1,118 @@
+# ruby encoding: utf-8
+
+de:
+ views:
+  show: Anzeigen
+  tour:
+   menu: Touren
+   sub:
+    all: Alle
+    month: Monat
+    own: Eigene
+    diary: Tagebuch
+    new: Neue Tour
+    notclosed: Nicht abgeschlossen
+   month:    
+    heading: Touren
+    heading_sub: Wann wird wo von wem gefahren
+   _modal:
+    details: Tourdetails
+    comments: Kommentare
+    ratings: Bewertungen
+    close: Abschliessen
+    track: Track
+    nocomments: Noch keine Kommentare vorhanden
+    average: Durchschnitt
+    ratings_after_start: Bewertung erst nach Tourstart möglich
+    alread_closed: Tour ist bereits abgeschlossen
+    not_started: Tour noch nicht gestartet!
+   detail:
+    distance: Kilometer
+    alt: Höhenmeter
+    type: Typ
+    duration: Dauer
+    meetingpoint: Treffpunkt
+    route: Route
+    confirmed: Zugesagt
+    declined: Abgesagt
+    edit: Bearbeiten
+    confirm: Zusagen
+    decline: Absagen
+   _new_comment:
+    comment: Kommentar
+    save: Senden
+   _rating:
+    speed: Geschwindigkeit
+    route: Strecke
+    rating: Gesamtnote
+   _form:
+    distance: Kilometer
+    create: Neue Tour anlegen
+    riding_time: Fahrzeit (Minuten)
+    type: Rennrad oder MTB
+    planned_track: Geplante Strecke
+    meeting_point: Treffpunkt
+    start_at: Startzeit
+    info: Link
+    save: Speichern
+   _close:
+    alt: Höhenmeter
+    distance: Kilometer
+    track: Gefahrene Strecke
+    info: Mehr Infos unter
+    kmlgpx: KML oder GPX Track
+    create: Neue Tour anlegen
+    riding_time: Fahrzeit (Minuten)
+    type: Rennrad oder MTB
+    planned_track: Geplante Strecke
+    meeting_point: Treffpunkt
+    start_at: Startzeit
+    info: Link
+    save: Speichern
+   _new_rating:
+    speed: Geschwindigkeit
+    route: Strecke
+    rating: Gesamtnote
+    rate: Bewerten
+    top: Top
+    flat: Zu flach
+    too_often: Zu oft gefahren
+    rangy: Zu bergig
+    boring: Langweilig
+    optimal: Optimal
+    to_slow: Zu laaaangsaaam...
+    to_fast: Wird sind KEINE Rennfahrer!
+    outstanding: Sehr gut
+    good: Gut
+    satisfying: Befriedigend
+    adequate: Ausreichend
+    bad: Mangehaft
+  track:
+   menu: Tracks
+   index:
+    heading: Tracks
+    heading_sub: Wo ist wer wo lang gefahren
+   _show:
+    track: Track
+    profile: Höhenprofil
+  user:
+   menu: Mitfahrer
+   profil: Profil
+   index:
+    heading: Mitfahrer
+    heading_sub: potenzielle Windschattengeber
+  post:
+   menu: Neues
+   index:
+    heading: Neuigkeiten
+    heading_sub: was ist so los im Moment
+  calendar:
+   menu: Kalender
+   index:
+    heading: Veranstaltungen
+    heading_sub: was gibt es dieses Jahr Interessantes
+  statistic:
+   menu: Ranglisten
+   index:
+    heading: Ranglisten
+    heading_sub: mal nix mit Kilometern, Höhenmetern, Durchschnitt...

@@ -1,0 +1,28 @@
+<h4><%= @calender.title %></h4>
+<% if notice %>
+  <div class="alert-message success">
+    <p id="notice"><%= notice %></p>
+  </div>
+<% end %>
+
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <td><b>Geht los:</b></td><td><%= @calender.begin_of_event.strftime("%d.%m.%Y %k:%M") %></td>
+    </tr> 
+    <tr>
+      <td><b>Bis:</b></td><td><%= @calender.end_of_event.strftime("%d.%m.%Y %k:%M") %></td>
+    </tr> 
+    <tr>
+      <td><b>Findet statt:</b></td><td><%= @calender.place %></td>      
+    </tr> 
+    <tr>        
+      <td><b>Das gibt es dazu zu sagen:</b></td><td><%= @calender.comment %></td> 
+    </tr> 
+    <tr>        
+      <td><b>Da gibt es noch mehr:</b></td><td><%= link_to @calender.link, @calender.link, :target => '_blank' -%></td> 
+    </tr>
+  </tbody>
+</table>
+
+<%= render :partial => 'form' %>

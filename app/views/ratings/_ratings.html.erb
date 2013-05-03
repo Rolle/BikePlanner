@@ -1,0 +1,12 @@
+<div class="section">
+  	<div class="section-title"><h5>Bewertungen</h5></div>
+  	<div class="section-content">
+		<div class="well small-well">
+	  		<% ratings.each do |rating| %>
+				<%=t('views.tour._rating.speed')%>: <b><%= speed_rating(rating.speed) %></b><br/>
+				<%=t('views.tour._rating.route')%>: <b><%= route_rating(rating.route) %></b><br/>
+				<%=t('views.tour._rating.rating')%> <%= pill(rating.rating) %><br/>
+	  		<% end %>
+		</div>
+	</div>
+</div>

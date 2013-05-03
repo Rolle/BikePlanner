@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h3><%= @current_user.name %> hat eine neue Tour erstellt: '<%= @tour.route %>' am <%= @tour.start_at.strftime("%d.%m.%Y %k:%M") %> Uhr in <%= @tour.meeting_point %>.</h3>
+    <p>
+      Mehr Info unter <%= link_to 'http://bikeplanner.rolandschmitt.info' , 'http://bikeplanner.rolandschmitt.info'%><br/>
+    </p>
+    <p>
+    <p>Danke fürs Mitmachen!</p>
+  </body>
+</html>

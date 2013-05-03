@@ -1,0 +1,10 @@
+<div class="section">
+  	<div class="section-title"><h5>Kommentare</h5></div>
+  	<div class="section-content">
+  		<div class="well small-well">
+	  		<% comments.each do |comment| %>
+	  			<blockquote><p><%= comment.comment.first(40) %></p><small><%= comment.user.name %>, <%= comment.created_at.strftime("%d.%m.%Y %H:%M") %></small></blockquote>
+	  		<% end %>
+	  	</div>
+	</div>
+</div>

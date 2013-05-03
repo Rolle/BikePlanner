@@ -1,0 +1,54 @@
+<% if tour %>    
+    <td><table class="table table-bordered"><tbody>
+        <tr>	
+          <td><%= tour.user.name %></td>
+          <td><%= tour.start_at.strftime("%k:%M")%> Uhr</td>
+          <td><%= tour.duration%> min.</td>
+        </tr>
+        <tr>
+            <td><%= tour.tour_type%></td>
+            <td><%= tour.meeting_point%></td>
+            <td><%= tour.route%></td>
+            <td>
+              <ul>
+              <% tour.confirmed_attendees.each do |ta| %> 
+                <li>
+                  <% if signed_in? %>
+                    <%= link_to ta.user.name, user_path(ta.user) %>                  
+                  <% else %>
+                    <%= ta.user.name %>
+                  <% end %>
+                </li>
+              <% end %>
+              </ul>
+            </td>            
+        </tr>
+        <% if !tour.link.nil? && tour.link != "" %>        
+          <tr>
+            <td colspan="3"><%= link_to "Details", tour.link, :target => '_blank'  %></td>
+          </tr>
+        <% end %>
+
+
+
+        <% if signed_in? %>
+          <tr><td colspan="3">            
+
+          
+
+          <% if  tour.user_id != current_user.id %>
+            <% if !tour.confirmed?(current_user) || tour.unconfirmed?(current_user)%>            
+              <%= link_to "Zusagen", :controller => "tours", :action => "add", :id => tour.id %>
+            <% else %>
+              <%= link_to " Absagen", :controller => "tours", :action => "cancel", :id => tour.id %>
+            <% end %>
+          <% end %>
+
+
+          </td></tr>
+        <% end %>
+          
+    </tbody></table></td>
+<% else %>
+    <td></td>
+<% end %>

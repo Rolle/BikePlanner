@@ -1,0 +1,60 @@
+<h3>Tour bewerten:</h3>
+
+<%= form_for(@tour, :url => save_rating_path) do |f| %>
+  <% if @tour.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tour.errors.count, "error") %> Fehler verhindern das speichern:</h2>
+
+      <ul>
+      <% @tour.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p></p>
+  <div class="field">
+    <%= f.label "Gefahrene Zeit (in Minuten):" %><br />
+    <%= f.number_field :duration, :class=>"text"%>
+  </div>
+  <p></p>
+  <div class="field">
+    <%= f.label "Rennrad oder MTB bzw. Veranstaltung" %><br />
+    <%= f.select :tour_type, "<option value='Rennrad'>Rennrad</option><option value='MTB'>MTB</option><option value='Veranstaltung'>Veranstaltung</option>", :class=>"text" %>
+  </div><p></p>
+  <div class="field">
+    <%= f.label "Startzeit:" %><br />
+    <%= f.datetime_select :start_at, :class=>"text" %>
+  </div><p></p>
+  <div class="field">
+    <%= f.label "gefahrene Route:" %><br />
+    <%= f.text_field :route, :class=>"text" %>
+  </div><p></p>
+  <div class="field">
+    <%= f.label "Treffpunkt:" %><br />
+    <%= f.text_field :meeting_point, :class=>"text" %>
+  </div><p></p>
+  <div class="field">
+    <%= f.label "Mehr Info unter:"%><br />
+    <%= f.text_field :link, :class=>"text" %>
+  </div><p></p>
+  <div class="field">
+    <%= f.label "Gefahrene Kilometer:"%><br />
+    <%= f.text_field :distance, :class=>"text" %>
+  </div><p></p>
+  <div class="field">
+    <%= f.label "Bewertung (1-10):"%><br />
+    <%= f.text_field :rating, :class=>"text" %>
+  </div><p></p>
+    <div class="field">
+    <%= f.label "Kommentar:"%><br />
+    <%= f.text_area :comment, :class=>"text" %>
+  </div><p></p>
+  <div class="actions">
+    <%= f.submit "Bewerten", :class=>"btn" %>
+  </div>
+<% end %>
+
+
+<!-- <%= link_to 'Show', @tour %> | -->
+<%= link_to 'Zurück', unrated_path %>

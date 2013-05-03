@@ -1,0 +1,40 @@
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> Fehler verhindern das Speichern:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="clearfix">
+    <%= f.label "Titel:" %>
+    <div class="input">
+      <%= f.text_field :title %>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <%= f.label "Text:" %>
+    <div class="input">
+      <%= f.text_area :text,  :rows => "6", :cols => "55" %>
+    </div>
+  </div>
+  
+  <div class="clearfix">
+    <%= f.label "Link:" %>
+    <div class="input">
+      <%= f.text_field :link %>
+    </div>
+  </div>
+  
+  <div class="clearfix">
+    <div class="input">
+      <%= f.submit "Speichern", :class=> "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>

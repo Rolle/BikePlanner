@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h3><%= @current_user.name %> hat die Tour '<%= @tour.route %>' am <%= @tour.start_at.strftime("%d.%m.%Y %k:%M") %> Uhr in <%= @tour.meeting_point %> abgeschlossen.</h3>
+    <p>
+      Die Daten sind <%= @tour.distance %> km, <%= @tour.alt %> Höhenmeter und <%= @tour.duration %> Minuten Fahrzeit.
+      Mehr Info unter <%= link_to 'http://bikeplanner.rolandschmitt.info' , 'http://bikeplanner.rolandschmitt.info/tour/' + @tour.id.to_s%><br/>
+    </p>
+    <p>
+    <p>Danke fürs Mitmachen!</p>
+  </body>
+</html>

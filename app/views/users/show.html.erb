@@ -1,0 +1,41 @@
+<h3>Mitfahrer:</h3>
+<% if notice %>
+  <div class ="alert-message warning" id="error_explanation">
+    <p id="notice"><%= notice %></p>
+  </div>
+<% end %>
+
+<div class="clearfix">
+  <b>Name:</b>
+  <div class="input">
+    <%= @user.name %>
+  </div>
+</div>
+
+<div class="clearfix">
+  <b>Mail:</b>
+  <div class="input">
+    <%= @user.mail %>
+  </div>
+</div>
+
+<div class="clearfix">
+  <b>Telefon:</b>
+  <div class="input">
+    <%= @user.phone %>
+  </div>
+</div>
+
+<div class="clearfix">
+  <b>Benachrichtigung per Mail:</b>
+  <div class="input">
+    <%=  @user.notification_allowed ? "Ja" : "Nein" %>
+  </div>
+</div>
+
+<div class="clearfix">
+  <b>Administrator:</b>
+  <div class="input">
+    <%=  @user.is_admin ? "Ja" : "Nein" %>
+  </div>
+</div>

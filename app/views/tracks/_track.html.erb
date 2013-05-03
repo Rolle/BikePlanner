@@ -1,0 +1,19 @@
+<div style="width:1000px; height:640px" id ="map-<%=track.id%>"></div>
+<script type='text/javascript'>    
+  L.Icon.Default.imagePath = '<%= asset_path "" %>';
+  var map = new L.Map('map-<%= track.id %>', { zoom: 11});
+  var osm = new L.TileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png');
+
+  map.addLayer(osm);
+
+  var track;
+
+  <% if @track.track_file_name.upcase.ends_with? "KML" %>
+    track = new L.KML('<%= root_url(:only_path => false) + track.track.url %>', {async: true});
+  <% else %>
+    track = new L.GPX('<%= root_url(:only_path => false) + track.track.url %>', {async: true});
+  <% end %>
+
+  track.on("loaded", function(e) { map.fitBounds(e.target.getBounds()); }); 
+  map.addLayer(track);  
+</script>
