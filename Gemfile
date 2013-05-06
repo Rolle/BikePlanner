@@ -38,6 +38,7 @@ gem 'twitter'
 gem 'paperclip'
 gem 'nokogiri'
 gem 'delayed_job_active_record','4.0.0.beta2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

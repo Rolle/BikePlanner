@@ -1,3 +1,30 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+
+
+*/
+
+ 
+
+.leaflet-control-minimap {
+	border:solid rgba(255, 255, 255, 0.7) 3px;
+	box-shadow: 0 1px 7px #999;
+	background: #f8f8f9;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+/*!
+ * Datepicker for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}.hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.bootstrap-datetimepicker-widget{top:0;left:0;width:250px;padding:4px;margin-top:1px;z-index:3000;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.bootstrap-datetimepicker-widget:before{content:'';display:inline-block;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #ccc;border-bottom-color:rgba(0,0,0,0.2);position:absolute;top:-7px;left:6px}.bootstrap-datetimepicker-widget:after{content:'';display:inline-block;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #fff;position:absolute;top:-6px;left:7px}.bootstrap-datetimepicker-widget>ul{list-style-type:none;margin:0}.bootstrap-datetimepicker-widget .timepicker-hour,.bootstrap-datetimepicker-widget .timepicker-minute,.bootstrap-datetimepicker-widget .timepicker-second{width:100%;font-weight:bold;font-size:1.2em}.bootstrap-datetimepicker-widget table[data-hour-format="12"] .separator{width:4px;padding:0;margin:0}.bootstrap-datetimepicker-widget .datepicker>div{display:none}.bootstrap-datetimepicker-widget .picker-switch{text-align:center}.bootstrap-datetimepicker-widget table{width:100%;margin:0}.bootstrap-datetimepicker-widget td,.bootstrap-datetimepicker-widget th{text-align:center;width:20px;height:20px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.bootstrap-datetimepicker-widget td.day:hover,.bootstrap-datetimepicker-widget td.hour:hover,.bootstrap-datetimepicker-widget td.minute:hover,.bootstrap-datetimepicker-widget td.second:hover{background:#eee;cursor:pointer}.bootstrap-datetimepicker-widget td.old,.bootstrap-datetimepicker-widget td.new{color:#999}.bootstrap-datetimepicker-widget td.active,.bootstrap-datetimepicker-widget td.active:hover{color:#fff;background-color:#006dcc;background-image:-moz-linear-gradient(top,#08c,#04c);background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));background-image:-webkit-linear-gradient(top,#08c,#04c);background-image:-o-linear-gradient(top,#08c,#04c);background-image:linear-gradient(to bottom,#08c,#04c);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0044cc',GradientType=0);border-color:#04c #04c #002a80;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);*background-color:#04c;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.bootstrap-datetimepicker-widget td.active:hover,.bootstrap-datetimepicker-widget td.active:hover:hover,.bootstrap-datetimepicker-widget td.active:active,.bootstrap-datetimepicker-widget td.active:hover:active,.bootstrap-datetimepicker-widget td.active.active,.bootstrap-datetimepicker-widget td.active:hover.active,.bootstrap-datetimepicker-widget td.active.disabled,.bootstrap-datetimepicker-widget td.active:hover.disabled,.bootstrap-datetimepicker-widget td.active[disabled],.bootstrap-datetimepicker-widget td.active:hover[disabled]{color:#fff;background-color:#04c;*background-color:#003bb3}.bootstrap-datetimepicker-widget td.active:active,.bootstrap-datetimepicker-widget td.active:hover:active,.bootstrap-datetimepicker-widget td.active.active,.bootstrap-datetimepicker-widget td.active:hover.active{background-color:#039 \9}.bootstrap-datetimepicker-widget td.disabled,.bootstrap-datetimepicker-widget td.disabled:hover{background:0;color:#999;cursor:not-allowed}.bootstrap-datetimepicker-widget td span{display:block;width:47px;height:54px;line-height:54px;float:left;margin:2px;cursor:pointer;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.bootstrap-datetimepicker-widget td span:hover{background:#eee}.bootstrap-datetimepicker-widget td span.active{color:#fff;background-color:#006dcc;background-image:-moz-linear-gradient(top,#08c,#04c);background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));background-image:-webkit-linear-gradient(top,#08c,#04c);background-image:-o-linear-gradient(top,#08c,#04c);background-image:linear-gradient(to bottom,#08c,#04c);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0044cc',GradientType=0);border-color:#04c #04c #002a80;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);*background-color:#04c;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.bootstrap-datetimepicker-widget td span.active:hover,.bootstrap-datetimepicker-widget td span.active:active,.bootstrap-datetimepicker-widget td span.active.active,.bootstrap-datetimepicker-widget td span.active.disabled,.bootstrap-datetimepicker-widget td span.active[disabled]{color:#fff;background-color:#04c;*background-color:#003bb3}.bootstrap-datetimepicker-widget td span.active:active,.bootstrap-datetimepicker-widget td span.active.active{background-color:#039 \9}.bootstrap-datetimepicker-widget td span.old{color:#999}.bootstrap-datetimepicker-widget td span.disabled,.bootstrap-datetimepicker-widget td span.disabled:hover{background:0;color:#999;cursor:not-allowed}.bootstrap-datetimepicker-widget th.switch{width:145px}.bootstrap-datetimepicker-widget th.next,.bootstrap-datetimepicker-widget th.prev{font-size:21px}.bootstrap-datetimepicker-widget th.disabled,.bootstrap-datetimepicker-widget th.disabled:hover{background:0;color:#999;cursor:not-allowed}.bootstrap-datetimepicker-widget thead tr:first-child th{cursor:pointer}.bootstrap-datetimepicker-widget thead tr:first-child th:hover{background:#eee}.input-append.date .add-on i,.input-prepend.date .add-on i{display:block;cursor:pointer;width:16px;height:16px}
 /*!
  * Bootstrap v2.3.0
  *
@@ -7,6 +34,7 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+
 
 .clearfix {
   *zoom: 1;
@@ -6156,3 +6184,541 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+.leaflet-control-distance {
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.leaflet-control-distance a, .leaflet-control-distance div {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+
+	padding: 2px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.leaflet-control-distance a {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.leaflet-control-distance div {
+	font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	color: #333;
+	height: 16px;
+	margin-top: 5px;
+	white-space: nowrap;
+}
+
+.leaflet-control-distance-edit {
+	/* http://openclipart.org/detail/114727/ftview-ruler-by-anonymous */
+	background-image: url('measure.png');
+}
+
+.leaflet-control-distance-delete {
+	margin-left: 5px;
+	/* Based on http://openclipart.org/detail/34729/architetto----tasto-8-by-anonymous */
+	background-image: url('cross.png');
+}
+
+a.leaflet-control-distance-active {
+	background-color: yellow;
+}
+/* required styles */
+
+
+.leaflet-map-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-pane,
+.leaflet-overlay-pane,
+.leaflet-shadow-pane,
+.leaflet-marker-pane,
+.leaflet-popup-pane,
+.leaflet-overlay-pane svg,
+.leaflet-zoom-box,
+.leaflet-image-layer,
+.leaflet-layer { /* TODO optimize classes */
+	position: absolute;
+	}
+.leaflet-container {
+	overflow: hidden;
+	outline: 0;
+	}
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	}
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+	display: block;
+	}
+.leaflet-clickable {
+	cursor: pointer;
+	}
+.leaflet-dragging, .leaflet-dragging .leaflet-clickable {
+	cursor: move;
+	}
+.leaflet-container img {
+    /* map is broken in FF if you have max-width: 100% on tiles */
+	max-width: none !important;
+	}
+.leaflet-container img.leaflet-image-layer {
+    /* stupid Android 2 doesn't understand "max-width: none" properly */
+    max-width: 15000px !important;
+    }
+
+.leaflet-tile-pane { z-index: 2; }
+.leaflet-objects-pane { z-index: 3; }
+.leaflet-overlay-pane { z-index: 4; }
+.leaflet-shadow-pane { z-index: 5; }
+.leaflet-marker-pane { z-index: 6; }
+.leaflet-popup-pane { z-index: 7; }
+
+.leaflet-tile {
+    filter: inherit;
+    visibility: hidden;
+	}
+.leaflet-tile-loaded {
+	visibility: inherit;
+	}
+
+.leaflet-zoom-box {
+    width: 0;
+    height: 0;
+    }
+
+/* Leaflet controls */
+
+.leaflet-control {
+	position: relative;
+	z-index: 7;
+	pointer-events: auto;
+	}
+.leaflet-top,
+.leaflet-bottom {
+	position: absolute;
+	z-index: 1000;
+	pointer-events: none;
+	}
+.leaflet-top {
+	top: 0;
+	}
+.leaflet-right {
+	right: 0;
+	}
+.leaflet-bottom {
+	bottom: 0;
+	}
+.leaflet-left {
+	left: 0;
+	}
+.leaflet-control {
+	float: left;
+	clear: both;
+	}
+.leaflet-right .leaflet-control {
+	float: right;
+	}
+.leaflet-top .leaflet-control {
+	margin-top: 10px;
+	}
+.leaflet-bottom .leaflet-control {
+	margin-bottom: 10px;
+	}
+.leaflet-left .leaflet-control {
+	margin-left: 10px;
+	}
+.leaflet-right .leaflet-control {
+	margin-right: 10px;
+	}
+
+.leaflet-control-zoom {
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	}
+.leaflet-control-zoom {
+	padding: 5px;
+	background: rgba(0, 0, 0, 0.25);
+	}
+.leaflet-control-zoom a {
+	background-color: rgba(255, 255, 255, 0.75);
+	}
+.leaflet-control-zoom a, .leaflet-control-layers a {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	display: block;
+	}
+.leaflet-control-zoom a {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	width: 19px;
+	height: 19px;
+	}
+.leaflet-control-zoom a:hover {
+	background-color: #fff;
+	}
+.leaflet-touch .leaflet-control-zoom a {
+	width: 27px;
+	height: 27px;
+	}
+.leaflet-control-zoom-in {
+	background-image: url(zoom-in.png);
+	margin-bottom: 5px;
+	}
+.leaflet-control-zoom-out {
+	background-image: url(zoom-out.png);
+	}
+
+.leaflet-control-layers {
+	box-shadow: 0 1px 7px #999;
+	background: #f8f8f9;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	}
+.leaflet-control-layers a {
+	background-image: url(layers.png);
+	width: 36px;
+	height: 36px;
+	}
+.leaflet-touch .leaflet-control-layers a {
+	width: 44px;
+	height: 44px;
+	}
+.leaflet-control-layers .leaflet-control-layers-list,
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+	display: none;
+	}
+.leaflet-control-layers-expanded .leaflet-control-layers-list {
+	display: block;
+	position: relative;
+	}
+.leaflet-control-layers-expanded {
+	padding: 6px 10px 6px 6px;
+	font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	color: #333;
+	background: #fff;
+	}
+.leaflet-control-layers input {
+	margin-top: 2px;
+	position: relative;
+	top: 1px;
+	}
+.leaflet-control-layers label {
+	display: block;
+	}
+.leaflet-control-layers-separator {
+	height: 0;
+	border-top: 1px solid #ddd;
+	margin: 5px -10px 5px -6px;
+	}
+
+.leaflet-container .leaflet-control-attribution {
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 0 5px #bbb;
+	margin: 0;
+    }
+
+.leaflet-control-attribution,
+.leaflet-control-scale-line {
+	padding: 0 5px;
+	color: #333;
+	}
+
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-control-scale {
+	font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+
+.leaflet-left .leaflet-control-scale {
+	margin-left: 5px;
+	}
+.leaflet-bottom .leaflet-control-scale {
+	margin-bottom: 5px;
+	}
+
+.leaflet-control-scale-line {
+	border: 2px solid #777;
+	border-top: none;
+	color: black;
+	line-height: 1;
+	font-size: 10px;
+	padding-bottom: 2px;
+	text-shadow: 1px 1px 1px #fff;
+	background-color: rgba(255, 255, 255, 0.5);
+	}
+.leaflet-control-scale-line:not(:first-child) {
+	border-top: 2px solid #777;
+	padding-top: 1px;
+	border-bottom: none;
+	margin-top: -2px;
+	}
+.leaflet-control-scale-line:not(:first-child):not(:last-child) {
+	border-bottom: 2px solid #777;
+	}
+
+.leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers {
+	box-shadow: none;
+	}
+.leaflet-touch .leaflet-control-layers {
+	border: 5px solid #bbb;
+	}
+
+
+/* Zoom and fade animations */
+
+.leaflet-fade-anim .leaflet-tile, .leaflet-fade-anim .leaflet-popup {
+	opacity: 0;
+
+	-webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+	}
+.leaflet-fade-anim .leaflet-tile-loaded, .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+	opacity: 1;
+	}
+
+.leaflet-zoom-anim .leaflet-zoom-animated {
+	-webkit-transition: -webkit-transform 0.25s cubic-bezier(0.25,0.1,0.25,0.75);
+	-moz-transition: -moz-transform 0.25s cubic-bezier(0.25,0.1,0.25,0.75);
+	-o-transition: -o-transform 0.25s cubic-bezier(0.25,0.1,0.25,0.75);
+	transition: transform 0.25s cubic-bezier(0.25,0.1,0.25,0.75);
+	}
+
+.leaflet-zoom-anim .leaflet-tile,
+.leaflet-pan-anim .leaflet-tile,
+.leaflet-touching .leaflet-zoom-animated {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    }
+
+.leaflet-zoom-anim .leaflet-zoom-hide {
+	visibility: hidden;
+	}
+
+
+/* Popup layout */
+
+.leaflet-popup {
+	position: absolute;
+	text-align: center;
+	}
+.leaflet-popup-content-wrapper {
+	padding: 1px;
+	text-align: left;
+	}
+.leaflet-popup-content {
+	margin: 14px 20px;
+	}
+.leaflet-popup-tip-container {
+	margin: 0 auto;
+	width: 40px;
+	height: 20px;
+	position: relative;
+	overflow: hidden;
+	}
+.leaflet-popup-tip {
+	width: 15px;
+	height: 15px;
+	padding: 1px;
+
+	margin: -8px auto 0;
+
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	}
+.leaflet-container a.leaflet-popup-close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 4px 5px 0 0;
+	text-align: center;
+	width: 18px;
+	height: 14px;
+	font: 16px/14px Tahoma, Verdana, sans-serif;
+	color: #c3c3c3;
+	text-decoration: none;
+	font-weight: bold;
+	}
+.leaflet-container a.leaflet-popup-close-button:hover {
+	color: #999;
+	}
+.leaflet-popup-content p {
+	margin: 18px 0;
+	}
+.leaflet-popup-scrolled {
+	overflow: auto;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	}
+
+
+/* Visual appearance */
+
+.leaflet-container {
+	background: #ddd;
+	}
+.leaflet-container a {
+	color: #0078A8;
+	}
+.leaflet-container a.leaflet-active {
+    outline: 2px solid orange;
+    }
+.leaflet-zoom-box {
+	border: 2px dotted #05f;
+	background: white;
+	opacity: 0.5;
+	}
+.leaflet-div-icon {
+    background: #fff;
+    border: 1px solid #666;
+    }
+.leaflet-editing-icon {
+    border-radius: 2px;
+    }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+	background: white;
+
+	box-shadow: 0 3px 10px #888;
+	-moz-box-shadow: 0 3px 10px #888;
+	-webkit-box-shadow: 0 3px 14px #999;
+	}
+.leaflet-popup-content-wrapper {
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	}
+.leaflet-popup-content {
+	font: 12px/1.4 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+.leaflet-vml-shape {
+	width: 1px;
+	height: 1px;
+	}
+.lvml {
+	behavior: url(#default#VML); 
+	display: inline-block; 
+	position: absolute;
+	}
+	
+.leaflet-control {
+	display: inline;
+	}
+
+.leaflet-popup-tip {
+	width: 21px;
+	_width: 27px;
+	margin: 0 auto;
+	_margin-top: -3px;
+	
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
+	}
+.leaflet-popup-tip-container {
+	margin-top: -1px;
+	}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+	border: 1px solid #bbb;
+	}
+
+.leaflet-control-zoom {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3F000000',EndColorStr='#3F000000');
+	}
+.leaflet-control-zoom a {
+	background-color: #eee;
+	}
+.leaflet-control-zoom a:hover {
+	background-color: #fff;
+	}
+.leaflet-control-layers-toggle {
+	}
+.leaflet-control-attribution, .leaflet-control-layers {
+	background: white;
+	}
+.navbar-search {
+  margin-top: 0px;
+}
+
+blockquote p {
+  font-size: 13px;
+}
+
+.dayWithEvents {
+  background-color: #E5E5E5;
+}
+.dayWithEventsNotClosed {
+  background-color: #BD362F; 
+}
+.day_names {
+  background-color: #EEE;
+  /*font-size: 110%;
+  font-style: bold;*/
+}
+form {
+  margin: 0 0 0px;
+}
+
+.calendar thead {
+	background-color: #EEE;
+}
+.calendar td { height: 100px; width: 14.28%; }
+
+.dropdown-menu {
+  z-index: 9999;
+  }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  background-image: url(/assets/glyphicons-halflings-b47b2b03ec961163432b4cfe22cd6f31.png);
+}
+
+.icon-white,
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:focus > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > li > a:focus > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"],
+.dropdown-submenu:hover > a > [class^="icon-"],
+.dropdown-submenu:focus > a > [class^="icon-"],
+.dropdown-submenu:hover > a > [class*=" icon-"],
+.dropdown-submenu:focus > a > [class*=" icon-"] {
+  background-image: url(/assets/glyphicons-halflings-b47b2b03ec961163432b4cfe22cd6f31.png);
+}
+
+.leaflet-control-zoom-in {
+  background-image: url(/assets/zoom-in-211af85f2a21246e6e8320368674a996.png);
+  }
+.leaflet-control-zoom-out {
+  background-image: url(/assets/zoom-out-52bde94e7b0aeb1f3671dd876e352912.png);
+  }
+.leaflet-control-layers a {
+  background-image: url(/assets/layers-685d6b912fdadf9686786795c1fb3845.png);
+  }

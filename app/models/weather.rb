@@ -12,7 +12,7 @@ end
 class Weather
 	require "nokogiri"
 	require "open-uri"
-  require "iconv"
+  #require "iconv"
 	attr_reader :forecasts, :condition, :temp, :humidity, :icon, :wind
 
     def initialize()
@@ -20,8 +20,8 @@ class Weather
       begin
     		doc = Nokogiri::XML(open("http://www.google.com/ig/api?weather=54341-Germany&hl=de"))
         conv = Iconv.new('US-ASCII//IGNORE', 'UTF-8')
-
-      	@condition = conv.iconv(doc.xpath("//current_conditions//condition").first.attribute("data").value)
+        @condition = doc.xpath("//current_conditions//condition").first.attribute("data").value.encode("UTF-8", :invalid => :replace, :undef => :replace, :replace => "?")
+      	#@condition = conv.iconv(doc.xpath("//current_conditions//condition").first.attribute("data").value)
       	@temp = doc.xpath("//current_conditions//temp_c").first.attribute("data").value
       	@humidity = doc.xpath("//current_conditions//humidity").first.attribute("data")
       	@icon = "http://www.google.de/" + doc.xpath("//current_conditions//icon").first.attribute("data").value
