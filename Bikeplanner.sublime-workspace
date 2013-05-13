@@ -207,14 +207,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/Program Files/Apache Software Foundation/Apache2.4/conf/virtual-hosts.conf",
-			"settings":
-			{
-				"buffer_size": 1406,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
@@ -240,12 +232,13 @@
 	},
 	"file_history":
 	[
+		"/C/Projects/ruby/Bikeplanner/Gemfile",
+		"/C/Program Files/Apache Software Foundation/Apache2.4/conf/virtual-hosts.conf",
+		"/C/Projects/ruby/Bikeplanner/.gitignore",
 		"/C/Projects/ruby/Bikeplanner/app/assets/stylesheets/overwrite.css.erb",
 		"/C/Projects/ruby/Bikeplanner/app/assets/stylesheets/overwrite.css",
 		"/C/Projects/ruby/Bikeplanner/app/assets/stylesheets/bootstrap.css",
-		"/C/Program Files/Apache Software Foundation/Apache2.4/conf/virtual-hosts.conf",
 		"/C/Projects/ruby/Bikeplanner/app/assets/stylesheets/bootstrap.css.erb",
-		"/C/Projects/ruby/Bikeplanner/Gemfile",
 		"/C/Projects/ruby/Bikeplanner/log/yourapplication_access.log",
 		"/C/Projects/ruby/Bikeplanner/app/models/weather.rb",
 		"/C/Projects/ruby/TwitterBikePlanner/.gitignore",
@@ -253,7 +246,6 @@
 		"/C/Projects/ruby/Bikeplanner/config/initializers/wrap_parameters.rb",
 		"/C/Projects/ruby/TwitterBikePlanner/test_mail.rb",
 		"/C/Projects/ruby/Bikeplanner/config/initializers/session_store.rb",
-		"/C/Projects/ruby/Bikeplanner/.gitignore",
 		"/C/Projects/ruby/Rails4Test/Gemfile",
 		"/C/Projects/ruby/Bikeplanner/config/initializers/secret_token.rb",
 		"/C/Projects/ruby/Bikeplanner/config/environments/test.rb",
@@ -394,6 +386,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"asset_path",
 			".png",
 			"png",
 			"glyphicon",
@@ -508,34 +501,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Program Files/Apache Software Foundation/Apache2.4/conf/virtual-hosts.conf",
-					"settings":
-					{
-						"buffer_size": 1406,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								601,
-								601
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
