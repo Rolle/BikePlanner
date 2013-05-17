@@ -14,7 +14,7 @@ class ToursController < ApplicationController
 
   def close
       @tour = Tour.find(params[:id])
-      @tour.update_attributes(params[:tour])
+      @tour.update_attributes(tour_params)
       @tour.rated = 1
       if @tour.save
         if MailEnv::SEND_NOTIFICATION_EMAIL

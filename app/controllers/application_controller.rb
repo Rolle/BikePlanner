@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   def latest
     @last_comments = Comment.all(:limit => 5, :order => "created_at DESC")    
     @last_tracks = Tour.where("track_file_name is not null").limit(5).order("track_updated_at desc")
-    @last_tours = Tour.find(:all, :limit => 5, :order => "start_at DESC")
+    @last_tours = Tour.all(:limit => 5, :order => "start_at DESC")
     @last_internet_news = InternetNew.new
     #@weather = Weather.new
     #@last_posts = Post.find(:all, :limit => 5, :order => "created_at DESC")

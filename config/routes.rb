@@ -23,13 +23,12 @@ Bikeplanner::Application.routes.draw do
   match "calenders/month/:year/:month" => "calenders#month", :as => "event_calendar", via: :get
   
   match 'group/:user_id/:group_id' => 'users#change_group', :as => :change_group, via: :get
-  
 
   resources :tours do
     member do
       get 'add'
       get 'cancel'
-      put 'close'
+      #post 'close'
     end
     collection do
       get 'week'
@@ -39,7 +38,7 @@ Bikeplanner::Application.routes.draw do
       get 'tracks'
     end
   end
-
+  match 'tours/:id/close' => 'tours#close', :as => :close, via: :patch
   resources :tracks do
     collection do
       get 'mtb'
