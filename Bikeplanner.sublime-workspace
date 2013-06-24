@@ -208,53 +208,10 @@
 	"buffers":
 	[
 		{
-			"contents": "gem install sqlite3 --platform=ruby -- --with-sqlite3-include=C:\\Temp\\sqlite-3.7.15.2-x86-windows\\include --with-sqlite3-lib=C:\\Temp\\sqlite-3.7.15.2-x86-windows\\lib --no-rdoc --no-ri",
-			"settings":
-			{
-				"buffer_size": 182,
-				"line_ending": "Windows",
-				"name": "gem install sqlite3 --platform=ruby -- --with-sqli"
-			}
-		},
-		{
-			"file": "app/views/tours/_close.html.erb",
-			"settings":
-			{
-				"buffer_size": 2150,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 3714,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 158 files for \"withouttour\"\n\nC:\\Projects\\ruby\\Bikeplanner\\app\\controllers\\comments_controller.rb:\n   12    end\n   13    \n   14:   def withouttour\n   15      @comment = Comment.new()\n   16      @comment.comment = params[:single_comment]    \n\nC:\\Projects\\ruby\\Bikeplanner\\app\\views\\comments\\_last.html.erb:\n    3  	<div class=\"section-content\">\n    4      <% if signed_in? %>\n    5:          <%= form_tag({:controller => 'comments', :action => 'withouttour'}, :class=>\"form-inline\", :remote => true, :method => :post) do %>   \n    6                <%= text_field_tag :single_comment, nil, :class=>\"input-medium\" %>\n    7                <%= submit_tag t('views.tour._new_comment.save'), :class=>\"btn btn-primary\" %>\n\n2 matches across 2 files\n",
-			"settings":
-			{
-				"buffer_size": 749,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
 			"file": "app/controllers/tours_controller.rb",
 			"settings":
 			{
-				"buffer_size": 5847,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controllers/users_controller.rb",
-			"settings":
-			{
-				"buffer_size": 1375,
+				"buffer_size": 5845,
 				"line_ending": "Windows"
 			}
 		}
@@ -283,9 +240,14 @@
 	},
 	"file_history":
 	[
+		"/C/Projects/ruby/Bikeplanner/Gemfile",
+		"/C/Projects/ruby/Bikeplanner/sqlite_install.txt",
+		"/C/Projects/ruby/Bikeplanner/app/views/tours/_close.html.erb",
+		"/C/Projects/ruby/Bikeplanner/app/controllers/users_controller.rb",
+		"/C/Projects/ruby/Bikeplanner/app/controllers/tours_controller.rb",
+		"/C/Projects/ruby/Bikeplanner/config/routes.rb",
 		"/C/Projects/ruby/Bikeplanner/app/controllers/application_controller.rb",
 		"/C/Projects/ruby/Bikeplanner/app/views/comments/_last.html.erb",
-		"/C/Projects/ruby/Bikeplanner/Gemfile",
 		"/C/Program Files/Apache Software Foundation/Apache2.4/conf/virtual-hosts.conf",
 		"/C/Projects/ruby/Bikeplanner/.gitignore",
 		"/C/Projects/ruby/Bikeplanner/app/assets/stylesheets/overwrite.css.erb",
@@ -295,7 +257,6 @@
 		"/C/Projects/ruby/Bikeplanner/log/yourapplication_access.log",
 		"/C/Projects/ruby/Bikeplanner/app/models/weather.rb",
 		"/C/Projects/ruby/TwitterBikePlanner/.gitignore",
-		"/C/Projects/ruby/Bikeplanner/config/routes.rb",
 		"/C/Projects/ruby/Bikeplanner/config/initializers/wrap_parameters.rb",
 		"/C/Projects/ruby/TwitterBikePlanner/test_mail.rb",
 		"/C/Projects/ruby/Bikeplanner/config/initializers/session_store.rb",
@@ -406,11 +367,7 @@
 		"/C/Projects/ruby/BigSwiftBrother/app/views/order/bicentrydate.html.erb",
 		"/C/Projects/ruby/BigSwiftBrother/app/views/log/customeriddate.html.erb",
 		"/C/Projects/ruby/BigSwiftBrother/app/views/docimport/monthlystat.html.erb",
-		"/C/Projects/ruby/UDPClient.rb",
-		"/C/Projects/ruby/BigSwiftBrother/app/views/tracking/issuerorderid.html.erb",
-		"/C/Projects/ruby/BigSwiftBrother/app/views/statistic/geo.html.erb",
-		"/C/Projects/ruby/BigSwiftBrother/app/views/order/priceday.html.erb",
-		"/C/Projects/ruby/BigSwiftBrother/app/views/order/issuerorderid.html.erb"
+		"/C/Projects/ruby/UDPClient.rb"
 	],
 	"find":
 	{
@@ -418,7 +375,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"C:\\Projects\\ruby\\Bikeplanner\\app",
@@ -438,6 +395,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sidebar",
 			"withouttour",
 			"event_calendar",
 			"close",
@@ -554,152 +512,23 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"settings":
-					{
-						"buffer_size": 182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								182
-							]
-						],
-						"settings":
-						{
-							"auto_name": "gem install sqlite3 --platform=ruby -- --with-sqli",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/tours/_close.html.erb",
-					"settings":
-					{
-						"buffer_size": 2150,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								861,
-								861
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "config/routes.rb",
-					"settings":
-					{
-						"buffer_size": 3714,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1223,
-								1223
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 331.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"settings":
-					{
-						"buffer_size": 749,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										144,
-										155
-									],
-									[
-										453,
-										464
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "app/controllers/tours_controller.rb",
 					"settings":
 					{
-						"buffer_size": 5847,
+						"buffer_size": 5845,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								652,
-								652
+								5638,
+								5638
 							]
 						],
 						"settings":
@@ -709,35 +538,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1546.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/controllers/users_controller.rb",
-					"settings":
-					{
-						"buffer_size": 1375,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2386.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

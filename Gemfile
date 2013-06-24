@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0.rc1'
+gem 'rails', '4.0.0.rc2'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -32,7 +32,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'delayed_job', '4.0.0.beta1'
+gem 'delayed_job', '4.0.0.beta2'
 gem 'later_dude'
 gem 'twitter'
 gem 'paperclip'

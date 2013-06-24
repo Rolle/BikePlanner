@@ -173,7 +173,7 @@ class ToursController < ApplicationController
     @tour = Tour.find(params[:id])
 
     respond_to do |format|
-      if @tour.update_attributes(params[:tour])
+      if @tour.update_attributes(tour_params)
         format.html { redirect_to @tour, :notice => 'Tour wurde gespeichert.' }
       else
         format.html { render :action => "edit" }
