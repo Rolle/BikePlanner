@@ -44,9 +44,11 @@
                   <button class="btn" type="submit">Anmelden</button>
                 <% end %>
               <% else %> 
+                <!--
                 <%= form_for(:session, {:url => signout_path, :html =>{:class=>"navbar-form pull-right"}}) do |f| %>                          
                   <button class="btn" type="submit">Abmelden</button>
-                <% end %>
+                <% end %>-->
+                <%= link_to "Abmelden", signout_path,{:class => "btn pull-right"} %>
                 <p class="navbar-text pull-right"><i class="icon-user"></i>
                   Angemeldet als 
                   <a href="<%=edit_user_path(current_user.id)%>"><%= current_user.name %>&nbsp;</a>             

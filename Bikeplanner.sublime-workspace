@@ -208,10 +208,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/tours_controller.rb",
+			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 5845,
+				"buffer_size": 5588,
 				"line_ending": "Windows"
 			}
 		}
@@ -227,7 +227,10 @@
 	},
 	"console":
 	{
-		"height": 129.0
+		"height": 129.0,
+		"history":
+		[
+		]
 	},
 	"distraction_free":
 	{
@@ -241,12 +244,21 @@
 	"file_history":
 	[
 		"/C/Projects/ruby/Bikeplanner/Gemfile",
+		"/C/Projects/ruby/MT535Check/MT535_FundPriceCheck.rb",
+		"/C/Projects/ruby/MT535Check/ZV025FB.20130629_123545.01_2013-06-29T103548",
+		"/C/Projects/ruby/MT535Check/check_ZV025_output.rb",
+		"/C/Projects/ruby/MT535Check/checker.rb",
+		"/C/Projects/ruby/Bikeplanner/app/controllers/sessions_controller.rb",
+		"/C/Projects/ruby/Bikeplanner/app/helpers/sessions_helper.rb",
+		"/C/Projects/ruby/Bikeplanner/app/models/user.rb",
+		"/C/Projects/ruby/Bikeplanner/app/controllers/application_controller.rb",
+		"/C/Projects/ruby/Bikeplanner/app/helpers/application_helper.rb",
+		"/C/Projects/ruby/Bikeplanner/app/views/layouts/application.html.erb",
+		"/C/Projects/ruby/Bikeplanner/app/controllers/tours_controller.rb",
 		"/C/Projects/ruby/Bikeplanner/sqlite_install.txt",
 		"/C/Projects/ruby/Bikeplanner/app/views/tours/_close.html.erb",
 		"/C/Projects/ruby/Bikeplanner/app/controllers/users_controller.rb",
-		"/C/Projects/ruby/Bikeplanner/app/controllers/tours_controller.rb",
 		"/C/Projects/ruby/Bikeplanner/config/routes.rb",
-		"/C/Projects/ruby/Bikeplanner/app/controllers/application_controller.rb",
 		"/C/Projects/ruby/Bikeplanner/app/views/comments/_last.html.erb",
 		"/C/Program Files/Apache Software Foundation/Apache2.4/conf/virtual-hosts.conf",
 		"/C/Projects/ruby/Bikeplanner/.gitignore",
@@ -358,16 +370,7 @@
 		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/tour/de.yml",
 		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/track/de.yml",
 		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/track/en.yml",
-		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/tour/en.yml",
-		"/C/Projects/ruby/TwitterBikePlanner/app/helpers/tours_helper.rb",
-		"/C/Projects/ruby/TwitterBikePlanner/app/views/ratings/_new.html.erb",
-		"/C/Projects/ruby/TwitterBikePlanner/app/views/tours/_close.html.erb",
-		"/C/Projects/ruby/BigSwiftBrother/app/views/status/webserver.html.erb",
-		"/C/Projects/ruby/BigSwiftBrother/app/views/order/entrydate.html.erb",
-		"/C/Projects/ruby/BigSwiftBrother/app/views/order/bicentrydate.html.erb",
-		"/C/Projects/ruby/BigSwiftBrother/app/views/log/customeriddate.html.erb",
-		"/C/Projects/ruby/BigSwiftBrother/app/views/docimport/monthlystat.html.erb",
-		"/C/Projects/ruby/UDPClient.rb"
+		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/tour/en.yml"
 	],
 	"find":
 	{
@@ -395,6 +398,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"SEND_TWITTER_STATUS",
+			"authenticate",
 			"sidebar",
 			"withouttour",
 			"event_calendar",
@@ -517,28 +522,29 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/tours_controller.rb",
+					"file": "app/views/layouts/application.html.erb",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5845,
+						"buffer_size": 5588,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5638,
-								5638
+								2044,
+								2044
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2386.0,
+						"translation.y": 405.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -581,6 +587,7 @@
 	{
 		"height": 100.0
 	},
+	"project": "Bikeplanner.sublime-project",
 	"replace":
 	{
 		"height": 62.0
@@ -618,10 +625,24 @@
 		],
 		"width": 380.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 291.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
