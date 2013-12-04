@@ -208,11 +208,29 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/layouts/application.html.erb",
+			"contents": "Searching 158 files for \"text_area\"\n\nC:\\Projects\\ruby\\Bikeplanner\\app\\views\\calenders\\_form.html.erb:\n   59        <%= f.label \"Kommentar:\" %>\n   60        <div class=\"input\">\n   61:         <%= f.text_area :comment, :rows => \"6\", :cols => \"55\" %>\n   62        </div>\n   63      </div>\n\nC:\\Projects\\ruby\\Bikeplanner\\app\\views\\calenders\\edit.html.erb:\n   45        <%= f.label \"Kommentar:\" %>\n   46        <div class=\"input\">\n   47:         <%= f.text_area :comment, :rows => \"6\", :cols => \"55\" %>\n   48        </div>\n   49      </div>\n\nC:\\Projects\\ruby\\Bikeplanner\\app\\views\\posts\\_form.html.erb:\n   22      <%= f.label \"Text:\" %>\n   23      <div class=\"input\">\n   24:       <%= f.text_area :text,  :rows => \"6\", :cols => \"55\" %>\n   25      </div>\n   26    </div>\n\nC:\\Projects\\ruby\\Bikeplanner\\app\\views\\tours\\rate.html.erb:\n   49      <div class=\"field\">\n   50      <%= f.label \"Kommentar:\"%><br />\n   51:     <%= f.text_area :comment, :class=>\"text\" %>\n   52    </div><p></p>\n   53    <div class=\"actions\">\n\n4 matches across 4 files\n",
 			"settings":
 			{
-				"buffer_size": 5588,
+				"buffer_size": 1035,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "sqlite_install.txt",
+			"settings":
+			{
+				"buffer_size": 182,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1343,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -243,9 +261,10 @@
 	},
 	"file_history":
 	[
-		"/C/Projects/ruby/Bikeplanner/Gemfile",
 		"/C/Projects/ruby/MT535Check/MT535_FundPriceCheck.rb",
 		"/C/Projects/ruby/MT535Check/ZV025FB.20130629_123545.01_2013-06-29T103548",
+		"/C/Projects/ruby/Volleyball/config/routes.rb",
+		"/C/Projects/ruby/Volleyball3/config/routes.rb",
 		"/C/Projects/ruby/MT535Check/check_ZV025_output.rb",
 		"/C/Projects/ruby/MT535Check/checker.rb",
 		"/C/Projects/ruby/Bikeplanner/app/controllers/sessions_controller.rb",
@@ -255,6 +274,7 @@
 		"/C/Projects/ruby/Bikeplanner/app/helpers/application_helper.rb",
 		"/C/Projects/ruby/Bikeplanner/app/views/layouts/application.html.erb",
 		"/C/Projects/ruby/Bikeplanner/app/controllers/tours_controller.rb",
+		"/C/Projects/ruby/Bikeplanner/Gemfile",
 		"/C/Projects/ruby/Bikeplanner/sqlite_install.txt",
 		"/C/Projects/ruby/Bikeplanner/app/views/tours/_close.html.erb",
 		"/C/Projects/ruby/Bikeplanner/app/controllers/users_controller.rb",
@@ -368,9 +388,7 @@
 		"/C/Projects/ruby/TwitterBikePlanner/config/locales/en.yml",
 		"/C/Projects/ruby/TwitterBikePlanner/config/application.rb",
 		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/tour/de.yml",
-		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/track/de.yml",
-		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/track/en.yml",
-		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/tour/en.yml"
+		"/C/Projects/ruby/TwitterBikePlanner/config/locales/views/track/de.yml"
 	],
 	"find":
 	{
@@ -378,7 +396,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			"C:\\Projects\\ruby\\Bikeplanner\\app",
@@ -398,6 +416,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"text_area",
 			"SEND_TWITTER_STATUS",
 			"authenticate",
 			"sidebar",
@@ -517,34 +536,116 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/layouts/application.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5588,
+						"buffer_size": 1035,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										197,
+										206
+									],
+									[
+										446,
+										455
+									],
+									[
+										681,
+										690
+									],
+									[
+										917,
+										926
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								191,
+								247
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sqlite_install.txt",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 182,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2044,
-								2044
+								182,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 405.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12,
+								12
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
